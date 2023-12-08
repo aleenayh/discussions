@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ Discussions</div>
+    </div>
+
+    <!----------------------------zero-------------------->
+
+    <div class="container voteBox">
+        <div class="voteQuestionContainer">
+            <P class="tiny">  There's a lot to talk about here. But <i>how</i> is your team talking?</P>
+            <h1>How does your team sound?</h1>
+
+         <div class="voteButtonBox stacked">
+            <button class="voteChoice">More quiet</button>
+            <button class="voteChoice">More chaotic</button>
+            <button class="voteChoice">Well balanced</button>
+
+         </div>
+         <span class="reflectionResult leftHalf">Does your team need to make any adjustments for the second half?
+         </span></div>
+     
+     
+         <div class="voteResultContainer">
+
+             <b>Here's what other students said:</b>
+             <div class="chartBox">
+                <span class="liveFromNewYork">
+                    <span class="blinking">•</span> LIVE</span>
+                 <canvas class="resultsChart"></canvas>
+             </div>
+         </div>
+     </div>
+    
+
+
+    <div class="timer"> 1:00 </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="votecode.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+    </div>
+
+    <!----------------------------zero-------------------->
+    <div class="container voteBox">
+        <div class="voteQuestionContainer">
+            <h1>What should you do after graduation?</h1>
+
+         <div class="voteButtonBox sixSquares">
+            <button class="voteChoice"><img src="/images/work.jpg">Get a Job</button>
+            <button class="voteChoice"><img src="/images/travel.jpg"> Travel (Gap Year)</button>
+            <button class="voteChoice"><img src="/images/trade.jpg"> Trade School</button>
+            <button class="voteChoice"><img src="/images/uni.jpg"> University</button>
+            <button class="voteChoice"><img src="/images/mil.jpg"> Armed Forces</button>
+            <button class="voteChoice"><img src="/images/corps.jpg">Service Program</button>
+         </div>
+         <span class="reflectionResult bottomStretch"><h>What about these results surprises you most?</h>
+         </span></div>
+     
+     
+         <div class="voteResultContainer">
+            
+
+
+
+             <h1 class="tiny">Here's what other students said:</h1>
+             <p> </p>
+             <div class="chartBox"><span class="liveFromNewYork"><span class="blinking">•</span> LIVE</span>
+                 <canvas class="resultsChart smaller"></canvas>
+             </div>
+         </div>
+     </div>
+
+       
+
+    <div class="timer"> 1:00 </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="votecode.js"></script>
+</body>
+
+</html>

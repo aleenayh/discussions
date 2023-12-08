@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="/../style.css">
+  <title>Compare Options</title>
+</head>
+
+<body>
+  <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span
+      class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+
+  <div class="container" id="slideBaseContainer">
+    <span class="optionsHeader"><h id="contextHeader">Which path should the herd take?</h>
+    </span>
+
+    <div class="optionsWrapper" style="margin:5vh 5vw 0 5vw">
+      <div class="option" style="background-image:url('images/north.jpg')"> 
+      <h4>Northern Route</h4>
+      <div class="optionContext">
+      <p>Water Availability:<br> <b>HIGH</b><br><br>
+      Predator Risk:<Br> <b>HIGH</b> (Lions, Crocodiles)<br><br>
+    Travel Distance:<br> <b>LONG</b></p></div>
+
+    </div>
+
+    <div class="option" style="background-image:url('images/east.jpg')"> 
+      <h4>Eastern Route</h4>
+      <div class="optionContext">
+        <p>Water Availability:<br> <b>MEDIUM</b><br><br>
+          Predator Risk:<Br> <b>MEDIUM</b> (Hyenas)<br><br>
+        Travel Distance:<br> <b>MEDIUM</b></p></div>
+    </div>
+
+    <div class="option" style="background-image:url('images/south.jpg')"> 
+      <h4>Southern Route</h4>
+      <div class="optionContext">
+        <p>Water Availability:<br> <b>LOW</b><br><br>
+          Predator Risk:<Br> <b>LOW</b> (Small Predators)<br><br>
+        Travel Distance:<br> <b>VERY LONG</b></p></div>
+    </div>
+
+    <div class="option" style="background-image:url('images/west.jpg')"> 
+      <h4>Western Route</h4>
+      <div class="optionContext">
+        <p>Water Availability:<br> <b>MEDIUM</b><br><br>
+          Predator Risk:<Br> <b>HIGH</b> (Large Packs of Predators)<br><br>
+        Travel Distance:<br> <b>SHORT</b></p></div>
+    </div>
+
+    </div>
+    <span id="transientText">
+      <P>What impact does distance have on your choice?</P>
+      <P>What’s the biggest difference between the best and second-best option?</P>
+      <P>What is more important: avoiding risk or securing resources?</P>
+      <P>What system are you using to evaluate these?</P>
+      <P>Are you sure you’ve made the right choice? What are the downsides?</P>
+    </span>
+
+    <div id="progressContainer">
+      <div id="progressBar"> </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="timer"> 5:00 </div>
+  <div class="elementCounter">1 of 4</div>
+  <script src="/../scripts/script.js"></script>
+  <script src="/../scripts/contextoptions.js"></script>
+</body>
+
+</html>

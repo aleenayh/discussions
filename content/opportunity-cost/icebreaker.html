@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Icebreakers</title>
+</head>
+
+<body>
+  <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span
+      class="headerGradient">Teams</span><span> ◈ </span><span id="episodeTitle"></span></div>
+
+  <div class="container" id="slideBaseContainer">
+    <div class="imagePosition"></div>
+    <div class="textContainer fullwidth" id="textOne"></div>
+    <div class="textContainer fullwidth" id="textTwo"></div>
+    <div class="textContainer fullwidth" id="textThree"></div>
+
+    <div id="smallVote">
+      <div id="instructionText">You can change your vote at any time.</div>
+      <button class="voteChoice left">Money</button>
+      <div class="voteResultContainer">
+        <span id="leftVote">0%</span><span id="rightVote">0%</span>
+      </div>
+      <button class="voteChoice right">Time</button>
+    </div>
+
+    <div id="progressContainer">
+      <div id="progressBar"> </div>
+    </div>
+  </div>
+
+  <!----- don't adjust anything above this line except the episode title------>
+
+  <div class="slidesets">
+    
+    <P>Hello again.</p>
+
+    <P>We'll get started in just a moment.</p>
+
+    <P> </p>
+      <video autoplay loop muted playsinline class="slideImg">
+        <source src="" type="video/mp4">
+      </video>
+
+    <p>Need help? Ask a teammate, or press <b>?</b> for an adult.</p>
+<p> </p>
+      
+
+    <P>Use this time to <b>say hello to your team.</b></p>
+
+    <P>Introduce yourself. Say where you're from. </p>
+
+    <P>That's what <b>good teammates</b> do.</p>
+
+    <P>Here's an opening question:<br><br>
+      <b>Is money more important than time?</b></p>
+
+    <P>Discuss and vote.</p>
+
+
+
+
+  </div>
+
+  <div class="timer"> 7:00 </div>
+  <div class="elementCounter">1 of X</div>
+
+  <script src="script.js"></script>
+  <script src="slide-helper.js"></script>
+  <script src="smallvote.js"></script>
+</body>
+
+</html>

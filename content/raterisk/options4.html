@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Compare Options</title>
+</head>
+
+<body>
+  <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span
+      class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+
+  <div class="container" id="slideBaseContainer">
+    <span class="optionsHeader"><h id="contextHeader">What's the best form of travel?</h>
+      <p>Let's review the costs and benefits of each option:</p>
+    </span>
+
+    <div class="optionsWrapper">
+      <div class="option" style="background-image:url('/images/shoes.jpg')"> 
+      <h4>Walk</h4>
+        <P><list><span class="pro">+</span> No Emissions<Br>
+          <span class="pro">+</span> Healthy<Br>
+          <span class="pro">+</span> Inexpensive<Br>
+          <span class="con">-</span> Slow<Br>
+          <span class="con">-</span> Uncomfortable in Bad Weather<Br>
+          <span class="con">-</span> Physically Demanding</list>
+        </P>
+    </div>
+
+    <div class="option" style="background-image:url('/images/bike.jpg')"> 
+      <h4>Bicycle</h4>
+      <P><list><span class="pro">+</span> No Emissions<Br>
+        <span class="pro">+</span> Healthy<Br>
+        <span class="pro">+</span> Inexpensive<Br>
+        <span class="con">-</span> Slow<Br>
+        <span class="con">-</span> Uncomfortable in Bad Weather<Br>
+        <span class="con">-</span> Risk of Accidents</list>
+      </P>
+    </div>
+
+    <div class="option" style="background-image:url('/images/electricbike.jpg')"> 
+      <h4>Electric Bike</h4>
+      <P><list><span class="pro">+</span> Speed<Br>
+        <span class="pro">+</span> Low Emissions<Br>
+        <span class="pro">+</span> Inexpensive<Br>
+        <span class="con">-</span> Higher Cost<Br>
+        <span class="con">-</span> Requires Maintenance<Br>
+        <span class="con">-</span> Risk of Accidents</list>
+      </P>
+    </div>
+
+    <div class="option" style="background-image:url('/images/bus.jpg')"> 
+      <h4>Public Transit</h4>
+      <P><list><span class="pro">+</span> Comfort<Br>
+        <span class="pro">+</span> Eco Friendly<Br>
+        <span class="pro">+</span> Easy to Use<Br>
+        <span class="con">-</span> Ticket Costs<Br>
+        <span class="con">-</span> Inconvenient for Some Routes<Br>
+        <span class="con">-</span> Reliability (Potential Delays)</list>
+      </P>
+    </div>
+
+    <div class="option" style="background-image:url('/images/car.jpg')"> 
+      <h4>Car</h4>
+      <P><list><span class="pro">+</span> Fastest<Br>
+        <span class="pro">+</span> Comfort<Br>
+        <span class="pro">+</span> Reliable<Br>
+        <span class="con">-</span> Environmental Impact<Br>
+        <span class="con">-</span> Expensive (Gas & Maintenance)<Br>
+        <span class="con">-</span> Risk of Accidents</list>
+      </P>
+    </div>
+    </div>
+    <span id="transientText"> </span>
+
+    <div id="progressContainer">
+      <div id="progressBar"> </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="timer"> 5:00 </div>
+  <div class="elementCounter">1 of 5</div>
+  <script src="script.js"></script>
+  <script src="contextoptions.js"></script>
+</body>
+
+</html>

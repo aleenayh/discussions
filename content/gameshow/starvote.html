@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"> <span
+            class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <div class="container starVote">
+        <div class="voteQuestionContainer">
+            <h1>You just had 7 minutes of discussion.<Br><br>
+
+                How would you rate your teamwork in that time?</h1>
+
+
+            <div class="starsContainer">
+                <span class="star" id="1">&#9733;</span>
+                <span class="star" id="2">&#9733;</span>
+                <span class="star" id="3">&#9733;</span>
+                <span class="star" id="4">&#9733;</span>
+                <span class="star" id="5">&#9733;</span>
+            </div>
+            <div class="starExplainers">
+                <span class="explainer"> </span>
+                <span class="explainer"> </span>
+                <span class="explainer"> </span>
+                <span class="explainer"> </span>
+                <span class="explainer"> </span>
+            </div>
+            <div id="reflectionResult">
+                <h1>A harder question: What's the difference between a "5-star discussion" and a "1-star discussion"?</h1>
+            </div>
+        </div>
+
+        <div class="voteResultContainer">
+            <div class="chartBox">
+                <canvas class="resultsChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!---------one----------->
+    <div class="container starVote">
+        <div class="voteQuestionContainer">
+            <h1>Rate your team on...<br><br> <span class="delay">PARTICIPATION.</span></h1>
+
+
+            <div class="starsContainer delay">
+                <span class="star" id="1">&#9733;</span>
+                <span class="star" id="2">&#9733;</span>
+                <span class="star" id="3">&#9733;</span>
+                <span class="star" id="4">&#9733;</span>
+                <span class="star" id="5">&#9733;</span>
+            </div>
+            <div class="starExplainers">
+                <span class="explainer">Ghost town - few voices, minimal engagement.</span>
+                <span class="explainer"> </span>
+                <span class="explainer">Buzzing cafe - some chatter, not everyone's all in.</span>
+                <span class="explainer"> </span>
+                <span class="explainer">Town hall meeting - everyone's actively involved and contributing.</span>
+            </div>
+            <div id="reflectionResult">
+                <h1>What's the way to get 5 stars next time?</h1>
+            </div>
+        </div>
+
+        <div class="voteResultContainer">
+            <div class="chartBox">
+                <canvas class="resultsChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!----------------two---------------->
+
+
+    <div class="container starVote">
+        <div class="voteQuestionContainer">
+            <h1>Rate your team on...<br><br> <span class="delay">DEPTH OF DISCUSSION.</span></h1>
+
+
+            <div class="starsContainer delay">
+                <span class="star" id="1">&#9733;</span>
+                <span class="star" id="2">&#9733;</span>
+                <span class="star" id="3">&#9733;</span>
+                <span class="star" id="4">&#9733;</span>
+                <span class="star" id="5">&#9733;</span>
+            </div>
+            <div class="starExplainers">
+                <span class="explainer">Shallow - quick, surface-level answers.</span>
+                <span class="explainer"> </span>
+                <span class="explainer">Medium - some depth, but hesitant to plunge deep.</span>
+                <span class="explainer"> </span>
+                <span class="explainer">Deep - thorough, reflective, and insightful.</span>
+            </div>
+            <div id="reflectionResult">
+                <h1>How would you rate your <i>individual</i> contribution?</h1>
+            </div>
+        </div>
+
+        <div class="voteResultContainer">
+            <div class="chartBox">
+                <canvas class="resultsChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------three----------------------------->
+    <div class="container starVote">
+        <div class="voteQuestionContainer">
+            <h1>Rate your team on...<br><br> <span class="delay">EQUAL SPEAKING TIME.</span></h1>
+
+
+            <div class="starsContainer delay">
+                <span class="star" id="1">&#9733;</span>
+                <span class="star" id="2">&#9733;</span>
+                <span class="star" id="3">&#9733;</span>
+                <span class="star" id="4">&#9733;</span>
+                <span class="star" id="5">&#9733;</span>
+            </div>
+            <div class="starExplainers">
+                <span class="explainer">Monologue mode - one person dominates.</span>
+                <span class="explainer"> </span>
+                <span class="explainer">Tipping scale - some took a little space, some took more.</span>
+                <span class="explainer"> </span>
+                <span class="explainer">Roundtable rhythm - everyone had equal voice and time.</span>
+            </div>
+            <div id="reflectionResult">
+                <h1>What do you think the <i>next</i> rating will be on?</h1>
+            </div>
+        </div>
+
+        <div class="voteResultContainer">
+            <div class="chartBox">
+                <canvas class="resultsChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------four-------------------------------------->
+    <div class="container starVote">
+        <div class="voteQuestionContainer">
+            <h1>Rate your team on...<br><br> <span class="delay">FOLLOW UP QUESTIONS.</span></h1>
+
+
+            <div class="starsContainer delay">
+                <span class="star" id="1">&#9733;</span>
+                <span class="star" id="2">&#9733;</span>
+                <span class="star" id="3">&#9733;</span>
+                <span class="star" id="4">&#9733;</span>
+                <span class="star" id="5">&#9733;</span>
+            </div>
+            <div class="starExplainers">
+                <span class="explainer">Echo chamber - only statements, no questions.</span>
+                <span class="explainer"> </span>
+                <span class="explainer">Occasional curiosity - a few questions here and there.</span>
+                <span class="explainer"> </span>
+                <span class="explainer">Inquisitive investigator - frequent, engaging follow-ups.</span>
+            </div>
+            <div id="reflectionResult">
+                <h1>Define “a good follow-up question.”</h1>
+            </div>
+        </div>
+
+        <div class="voteResultContainer">
+            <div class="chartBox">
+                <canvas class="resultsChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="timer"> 5:00 </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="starvote.js"></script>
+</body>
+
+</html>

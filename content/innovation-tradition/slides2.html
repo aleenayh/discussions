@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Context Pages</title>
+</head>
+
+<body>
+  <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span
+      class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+
+  <div class="container" id="slideBaseContainer">
+    <div class="imagePosition"><video autoplay loop muted playsinline>
+        <source src="" type="video/mp4">
+      </video></div>
+    <div class="textContainer" id="textOne"></div>
+    <div class="textContainer" id="textTwo"></div>
+    <div class="textContainer" id="textThree"></div>
+    <div id="helperTalk"><button id="closeBubble">X</button>
+      <span id="introHelperText">Have the initial discussion of the 
+        issue with your room. <br><br>
+        If you think you've got it pretty well figured out, 
+        check in with us by clicking here.<br><br> 
+        We may have some follow-on questions 
+        for you to get you ready for your pitch.
+      </span>
+      <p>How do teachers make learning fun? Could an AI do that?</p>
+      <p>Can computer games teach as well as real teachers?</p>
+      <p>Are lessons made just for you better than group lessons?</p>
+      <p>Will school be different without teachers to talk to before and after class?</p>
+      <p>Can the best teachers make you want to learn more? Could an AI?</p>
+      <p>Can any subject be taught by computers and games?</p>
+      <p>Which way of learning will be best for a long period?</p>
+      <P>What ethical considerations arise when relying heavily on technology for education?</p>
+    </div>
+      <div id="helper"><img src="images/folks.jpg"></div>
+    </div>
+    <div id="progressContainer">
+      <div id="progressBar"> </div>
+    </div>
+  </div>
+
+
+  <div class="slidesets">
+
+    <video autoplay loop muted playsinline class="slideImg">
+      <source src="" type="video/mp4">
+    </video>
+    <P>In a few minutes, you'll decide what <b>traditional</b> elements your school will have…</p>
+    <P>…and which <b>innovative</b> elements.</p>
+    <P>Let's start with the idea of <b>teachers.</b></p>
+
+    <video autoplay loop muted playsinline class="slideImg">
+      <source src="images/teacher.mp4" type="video/mp4">
+    </video>
+
+    <p>Will you get the <b>best teachers</b> in the world to deliver the best lessons, in line with tradition?</p>
+
+    <p>Or instead <b>remove teachers</b> and embrace technology: AI learning with <b>VR headsets.</b>
+
+      <button id="replayButton"></button>
+    </p>
+  </div>
+
+
+
+
+  <div class="timer"> 5:00 </div>
+  <div class="elementCounter">1 of X</div>
+  <script src="script.js"></script>
+  <script src="slide-helper.js"></script>
+</body>
+
+</html>

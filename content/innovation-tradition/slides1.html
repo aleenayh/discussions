@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Context Pages</title>
+</head>
+
+<body>
+  <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span
+      class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+
+  <div class="container" id="slideBaseContainer">
+    <div class="imagePosition"><video autoplay loop muted playsinline>
+        <source src="" type="video/mp4">
+      </video></div>
+    <div class="textContainer" id="textOne"></div>
+    <div class="textContainer" id="textTwo"></div>
+    <div class="textContainer" id="textThree"></div>
+    
+    <div id="progressContainer">
+      <div id="progressBar"> </div>
+    </div>
+  </div>
+
+
+  <div class="slidesets">
+    <video autoplay loop muted playsinline class="slideImg">
+      <source src="images/town.mp4" type="video/mp4">
+    </video>
+    <P>This week's topic explores a classic conflict:</p>
+    <P><b>Tradition:</b> keeping things the same because they continue to work.<br><br>
+      <b>Innovation:</b> looking to the future to improve the way things are.</p>
+
+    <P>Which approach is better? <br><br>
+      <b>It depends.</b> Both approaches have risks.</p>
+    <video autoplay loop muted playsinline class="slideImg">
+      <source src="images/board.mp4" type="video/mp4">
+    </video>
+    <P>Here's the situation:</p>
+
+    <P>We are the Executive Board of an educational company.</p>
+
+    <P>We want your group to design <b>a brand new school.</b></p>
+
+    <video autoplay loop muted playsinline class="slideImg">
+      <source src="images/building.mp4" type="video/mp4">
+    </video>
+    <P>Here are the rules:</p>
+
+    <P>Your school must be <b>highly effective.</b> We'll ask you to consider a few areas
+    specifically.</p>
+
+    <P>In each area, you will choose between <b>traditional</b> approaches 
+      or <b>innovative</b> approaches.</p>
+    <video autoplay loop muted playsinline class="slideImg">
+      <source src="images/building.mp4" type="video/mp4">
+    </video>
+    <P>Here's the catch.</p>
+
+    <P>All teams in this session will vote on each area. Your school plan will need to incorporate the 
+      option with the majority votes.
+    </p>
+
+    <P>So all groups will build their school with the same constraints. 
+    </p>
+
+
+    <video autoplay loop muted playsinline class="slideImg">
+      <source src="images/board.mp4" type="video/mp4">
+    </video>
+    <P>At the end, we'll ask you to pitch us your plan.
+      You room will compete against other teams.</p>
+
+    <P>Which team will have the <b>best pitch?</b></p>
+
+    <P>Since all teams will use the same school plan,
+      it's not about what's included &ndash; it's about how you back those decisions up
+      and explain your thinking. We're curious to see what you come up with.
+
+      <button id="replayButton"></button>
+    </p>
+  </div>
+
+
+
+
+  <div class="timer"> 5:00 </div>
+  <div class="elementCounter">1 of X</div>
+  <script src="script.js"></script>
+  <script src="slide-helper.js"></script>
+</body>
+
+</html>

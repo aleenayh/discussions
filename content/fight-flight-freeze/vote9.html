@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span
+            class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+    </div>
+
+
+    <div class="container voteBox">
+        <div class="voteHeaderBar" style="display:none;">
+            <div class="voteHeader">You're playing Proxima.<br>
+                What's the best strategy?</div>
+            <div id="dummyTimer">1:30</div>
+            <div id="scenarioEndTime">0</div>
+            <div id="scenarioFullTime">30000</div>
+        </div>
+
+
+
+        <div class="voteQuestionContainer">
+            <h>Evaluate your teamwork.</h>
+            <br><br>
+            How was the participation in your group today?<br><br>
+            <video class="rapidVoteImg" autoplay loop muted playsinline style="display:none;">
+            </video>
+            <span class="voteContext"> </span>
+
+            <div class="voteButtonBox">
+                <button class="voteChoice">Everyone contributed.</button>
+                <button class="voteChoice">Some contributed.</button>
+                <button class="voteChoice">Our room was quiet.</button>
+            </div>
+        </div>
+
+
+        <div class="voteResultContainer">
+            <span class="liveFromNewYork"><span class="blinking">•</span> LIVE</span>
+            <canvas class="resultsChart"></canvas>
+
+            <div id="paralysis"> </div>
+
+            <span class="reflectionResult">
+                <h>Ask your team...</h><br><br>
+
+                What factors made it easier <br>
+                or more difficult <br>
+                to get everyone contributing?
+            </span>
+        </div>
+        <div class="timer"> 5:00 </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="votecode.js"></script>
+</body>
+
+</html>

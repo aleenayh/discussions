@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"> <span
+            class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <div class="dualVote">
+    <div class="container voteBox">
+        <div class="voteQuestionContainer">
+            <h1>What was your goal?</h1>
+
+            <div class="voteButtonBox stacked">
+                <button class="voteChoice">Speak up more</button>
+                <button class="voteChoice">Listen more</button>
+                <button class="voteChoice">Encourage others</button>
+                <button class="voteChoice">Ask more questions</button>
+            </div>
+
+            <div class="voteResultContainer">
+                <div class="chartBox">
+                    <canvas class="resultsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container voteBox">
+        <div class="voteQuestionContainer">
+            <h1>Did your communication improve today?</h1>
+
+            <div class="voteButtonBox stacked">
+                <button class="voteChoice">Yes, a little bit.</button>
+                <button class="voteChoice">Sort of. I could do better.</button>
+                <button class="voteChoice">Not really.</button>
+            </div>
+
+            <div class="voteResultContainer">
+                <div class="chartBox">
+                    <canvas class="resultsChart"></canvas>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div id="dualVoteReflection">What do these results tell us?</div>
+    </div>
+    
+
+</div>
+
+
+
+    <div class="timer"> 5:00 </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="splitvote.js"></script>
+</body>
+
+</html>

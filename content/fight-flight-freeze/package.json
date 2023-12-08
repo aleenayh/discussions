@@ -1,0 +1,19 @@
+{
+  "name": "intensive",
+  "version": "1.0.1",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@vercel/postgres": "^0.4.2",
+    "chart.js": "^4.4.0",
+    "vercel": "^32.2.1"
+  }
+}

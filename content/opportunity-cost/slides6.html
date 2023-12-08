@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Context Pages</title>
+</head>
+
+<body>
+  <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span
+      class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+
+  <div class="container" id="slideBaseContainer">
+    <div class="imagePosition"><video autoplay loop muted playsinline>
+        <source src="/images/gameshow.mp4" type="video/mp4">
+      </video></div>
+    <div class="textContainer" id="textOne"></div>
+    <div class="textContainer" id="textTwo"></div>
+    <div class="textContainer" id="textThree"></div>
+    <div id="helperTalk"><button id="closeBubble">X</button>
+      <p>What prizes are you assuming? If you knew the small prize and larger prizes were, would it change your answer?</p>
+
+<p>If you chose to spin the wheel and didn't win any prize, how would you feel? Do feelings factor in to “opportunity costs”?</p>
+
+<P>Would knowing the odds of winning the bigger prize influence your decision? How?</p> 
+
+<p>Does your decision in this game show mirror how you make decisions in your everyday life? If not, what makes it different?</p> 
+
+<P>Are you generally a person who likes to take risks, or not? Does your personal risk tolerance (or risk avoidance) change the opportunity cost of this choice?</p>
+    </div>
+    <div><div id="helper">Challenge Questions</div></div>
+    <div id="progressContainer">
+      <div id="progressBar"> </div>
+    </div>
+  </div>
+
+
+  <div class="slidesets">
+    <p>You're on a game show. You just won a small prize.</p>
+      
+    <p>You have the option to give up your prize and spin the wheel
+       for the chance to win a much larger prize. </p>
+    <p>Which would you choose? Which has the lower <b>opportunity cost?</b></p>
+  </div>
+
+
+
+
+  <div class="timer"> 5:00 </div>
+  <div class="elementCounter">1 of X</div>
+  <script src="script.js"></script>
+  <script src="slide-helper.js"></script>
+</body>
+
+</html>

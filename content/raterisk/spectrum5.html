@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"> <span
+            class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <div class="container spectrumVote">
+        <div class="voteQuestionContainer">
+            <h1>Which career is best?</h1>
+            <div class="instructionText">Consider the risks and benefits of each option.</div>
+        </div>
+
+        <div id="spectrum">
+            <div class="voteChoice firstDrag" style="background-image:url('/images/exec.png')" title="High paying corporate lawyer"></div>
+            <div class="voteChoice secondDrag" style="background-image:url('/images/socialwork.jpg')" title="Social work"></div>
+            <div class="voteChoice thirdDrag" style="background-image:url('/images/tech.jpg')" title="Tech Startup Founder"></div>
+            <div class="voteChoice fourthDrag" style="background-image:url('/images/firefighter.jpg')" title="Firefighter"></div>
+            <div class="voteChoice fifthDrag" style="background-image:url('/images/graphicdesign.jpg')" title="Freelance Graphic Designer"></div>
+        </div>
+        <div id="reflectionQuestion">You chose the “best career?” Define “best.”</div>
+        <div class="spectrumDesign">
+            <div class="arrow-left"></div>
+            <div class="gradientBar"></div>
+            <div class="arrow-right"></div>
+        </div>
+        <div class="leftLabel">Worst  </div>
+        <div class="rightLabel">Best  </div>
+        <div id="contextBlock">
+        </div>
+
+        <div id="spectrumResultsReturnHere">
+            <div class="instructionText">On average, other students said...</div>
+            <div class="voteChoice firstDrag" style="background-image:url('/images/exec.png')" title="High paying corporate lawyer"></div>
+            <div class="voteChoice secondDrag" style="background-image:url('/images/socialwork.jpg')" title="Social work"></div>
+            <div class="voteChoice thirdDrag" style="background-image:url('/images/tech.jpg')" title="Tech Startup Founder"></div>
+            <div class="voteChoice fourthDrag" style="background-image:url('/images/firefighter.jpg')" title="Firefighter"></div>
+            <div class="voteChoice fifthDrag" style="background-image:url('/images/graphicdesign.jpg')" title="Freelance Graphic Designer"></div>
+        </div>
+    </div>
+
+
+
+    <div class="timer"> 5:00 </div>
+    <div id="fakeTimer">0:00</div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="dragvote.js"></script>
+</body>
+
+</html>

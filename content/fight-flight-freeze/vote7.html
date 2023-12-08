@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+    </div>
+
+
+    <div class="container voteBox">
+        <div class="voteHeaderBar" style="display:none;">
+<div class="voteHeader">You're playing Proxima.<br>
+What's the best strategy?</div>
+    <div id="dummyTimer">1:30</div><div id="scenarioEndTime">0</div><div id="scenarioFullTime">30000</div></div>
+
+
+
+       <div class="voteQuestionContainer">        <h>TRUE or FALSE?</h> 
+        <br><br>
+        If you decide quickly,<br>
+                    you're more likely to regret your choice.
+        <video class="rapidVoteImg" autoplay loop muted playsinline style="display:none;">
+          </video>
+        <span class="voteContext"> </span>
+        
+        <div class="voteButtonBox">
+            <button class="voteChoice">TRUE</button>
+            <button class="voteChoice">FALSE</button>
+        </div>
+        </div>
+    
+    
+        <div class="voteResultContainer">
+            <span class="liveFromNewYork"><span class="blinking">•</span> LIVE</span>
+                <canvas class="resultsChart"></canvas>
+
+                <div id="paralysis"> </div>
+
+            <span class="reflectionResult"> </span>
+        </div>
+        <div class="timer"> 5:00 </div>
+    </div>
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="votecode.js"></script>
+</body>
+
+</html>

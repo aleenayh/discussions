@@ -1,0 +1,166 @@
+.container {
+  display:none;
+  padding:0;
+}
+.boardRoom {
+  width: 90vw;
+  height: 90vh;
+  margin: auto;
+  margin-top:0;
+  padding: 15px;
+  border-radius: 20px;
+  background-image: url(images/background.png);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.boardRoom h1 {
+  color: #000000;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+  text-align: center;
+  font-size: fit-content;
+  white-space: nowrap;
+  line-height: 130%;
+  font-variant: small-caps;
+  font-weight: bold;
+  width:100%;
+}
+
+div.character {
+  height: 50vh;
+  max-width: 25vw;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+div.character#advisorA {
+  background-color: #567088;
+  float: left;
+}
+
+div.character#advisorB {
+  background-color: #4c4c4d;
+  float: right;
+}
+
+img.character {
+  border-radius: 50px;
+  max-height: 23em;
+  width: 100%;
+}
+
+.speechBubble {
+  width: 30vw;
+  height: 15vh;
+  margin: 10px;
+  background-color: lightgrey;
+  border-radius: 25px;
+  color: black;
+  position: relative;
+  padding: 25px 15px 15px 20px;
+  font-size:0.8em;
+  line-height:100%;
+  display: none;
+  /*changes to flex in js*/
+}
+
+@media screen and (max-width: 1000px) {
+  .speechBubble {
+    width: 20vw;
+  }
+}
+
+.speechBubble#advisorA {
+  float: left;
+  background-color: #8c9cab;
+  margin-left: 3em;
+}
+
+.speechBubble#advisorA::before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 50px 30px 0 0;
+  border-color: #8c9cab transparent transparent transparent;
+  right: 100%;
+  top: 40%;
+  transform: rotate(80deg);
+}
+
+.speechBubble#advisorB {
+  float: right;
+  background-color: #828283;
+  margin-right: 3vw;
+}
+
+.speechBubble#advisorB::before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 50px 30px 0 0;
+  border-color: #828283 transparent transparent transparent;
+  left: 100%;
+  top: 40%;
+  transform: rotate(-95deg);
+}
+
+.speechBubble p {
+  width: 100%;
+  clear: both;
+}
+
+.speechBubble button.closeBubble {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #a30000;
+  background-color:transparent;
+  height:50px;
+  text-align: center;
+  border: none;
+  font-weight: bold;
+  font-size:1.5em;
+}
+
+.buttonBox {
+  width: 100%;
+  clear:both;
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+  vertical-align: bottom;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttonBox button {
+  position: relative;
+  display: inline-block;
+  margin: 5px 10px;
+  border-radius: 25px;
+  background-color: lightgrey;
+  min-height: 3em;
+  width:auto;
+  font-size: 0.8em;
+}
+
+button:hover {
+  background-color: #8c8c8c;
+}
+.qa1 {
+  display: none;
+}
+
+.qa2 {
+  display: none;
+}
+
+.qa3 {
+  display: none;
+}

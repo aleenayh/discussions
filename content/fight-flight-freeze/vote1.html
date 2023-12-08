@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+    </div>
+
+
+    <div class="container voteBox">
+        <div class="voteHeaderBar">
+<div class="voteHeader">You are starting a lemonade stand.
+    <br>You are trying to find the best location.</div>
+    <div id="dummyTimer">0:60</div><div id="scenarioEndTime">08000</div><div id="scenarioFullTime">60000</div></div>
+
+
+
+       <div class="voteQuestionContainer">
+        <h>MOVE or STAY PUT?</h> <br>
+        <video class="rapidVoteImg" autoplay loop muted playsinline>
+            <source src="images/lemonade.mp4" type="video/mp4">
+          </video>
+        <span class="voteContext">There's a large crowd of people nearby.</span>
+        <span class="voteContext">There are three other lemonade stands closer to the crowd than you.</span>
+            <span class="voteContext">You have way more lemonade supplies than they do. </span>
+        <div class="voteButtonBox">
+            <button class="voteChoice">MOVE THE STAND</button>
+            <button class="voteChoice">STAY PUT</button>
+        </div>
+        </div>
+    
+    
+        <div class="voteResultContainer">
+            <span class="liveFromNewYork"><span class="blinking">•</span> LIVE</span>
+                <canvas class="resultsChart"></canvas>
+
+                <div id="paralysis">You failed to make a decision 
+                    before the scenario ended. We call this <b>analysis paralysis</b>
+                    &ndash; being too focused analysing all the details to react 
+                    when you should.
+                </div>
+
+            <span class="reflectionResult"><h>Discuss:</h>
+                <br><br>What was the right business decision?
+                <br><br>What's the <b>best strategy</b> today — wait ?<Br> Or act as soon as you're sure?
+                <br><br>PS: You saw <b>all of the information</b> in this scenario before time ran out.<br><br>  That won't always happen…
+            </span>
+        </div>
+        <div class="timer"> 5:00 </div>
+    </div>
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="votecode.js"></script>
+</body>
+
+</html>

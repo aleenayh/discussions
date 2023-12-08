@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"> <span
+            class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <div class="container spectrumVote">
+        <div class="voteQuestionContainer">
+            <h1>Drag options to rank.</h1>
+            <div class="instructionText">When the voting concludes, we'll show you the real-world statistics.</div>
+        </div>
+
+        <div id="spectrum">
+            <div class="voteChoice thirdDrag" style="background-image:url('/images/melbournecar.jpg')" title="Driving a car in Melbourne, Australia"></div>
+            <div class="voteChoice fourthDrag" style="background-image:url('/images/melbourne.jpg')" title="Driving a car in London, United Kingdom"></div>
+            <div class="voteChoice firstDrag" style="background-image:url('/images/bikemessenger.jpg')" title="Riding a bike in New York City, United States"></div>
+            <div class="voteChoice fifthDrag" style="background-image:url('/images/nyc.jpg')" title="Walking in New York City, United States"></div>
+            <div class="voteChoice secondDrag" style="background-image:url('/images/skydive.jpg')" title="Skydiving in the United States"></div>
+        </div> 
+        <div id="reflectionQuestion" class="topFloatReflection">How many did you get right? How does that compare to your teammates?
+
+        </div>
+        <div class="spectrumDesign">
+            <div class="arrow-left"></div>
+            <div class="gradientBar"></div>
+            <div class="arrow-right"></div>
+        </div>
+        <div class="leftLabel">Least Risk to Safety</div>
+        <div class="rightLabel">Most Risk to Safety</div>
+        
+
+            <div class="instructionText hidden" id="resultTopper">Here's the truth...</div>
+            <div id="contextBlock">
+                <div class="irlStat">Riding a bike in New York City, USA: 18 fatalities in 2022. <span class="tiny">[nyc.gov]</span></div>
+                <div class="irlStat">Skydiving in the US: 20 fatalities in 2022. <span class="tiny">[uspa.org]</span></div>
+                <div class="irlStat">Driving a car in Melbourne, Australia: 32 fatalities in 2018. <span class="tiny">[tac.vic.gov.au]</span></div>
+                <div class="irlStat">Driving a car in London, United Kingdom: 66 fatalities in 2022. <span class="tiny">[tfl.gov.uk]</span></div>
+                <div class="irlStat">Walking in New York City, USA: 120 fatalities in 2022. <span class="tiny">[nyc.gov]</span></div>
+            </div>
+            <div id="IRLResults">
+                <div class="voteChoice firstDrag" style="background-image:url('/images/bikemessenger.jpg')" title="Riding a bike in New York City, United States"></div>
+                <div class="voteChoice secondDrag" style="background-image:url('/images/skydive.jpg')" title="Skydiving in the United States"></div>
+                <div class="voteChoice thirdDrag" style="background-image:url('/images/melbournecar.jpg')" title="Driving a car in Melbourne, Australia"></div>
+                <div class="voteChoice fourthDrag" style="background-image:url('/images/melbourne.jpg')" title="Driving a car in London, United Kingdom"></div>
+                <div class="voteChoice fifthDrag" style="background-image:url('/images/nyc.jpg')" title="Walking in New York City, United States"></div>
+                
+        </div>
+
+
+    </div>
+
+
+
+    <div class="timer"> 5:00 </div>
+    <div id="fakeTimer">0:00</div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="dragvote.js"></script>
+</body>
+
+</html>

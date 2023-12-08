@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Context Pages</title>
+</head>
+
+<body>
+  <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+
+  <div class="container" id="slideBaseContainer">
+    <div class="imagePosition"><video autoplay loop muted playsinline>
+        <source src="images/img21.mp4" type="video/mp4">
+      </video></div>
+    <div class="textContainer" id="textOne"></div>
+    <div class="textContainer" id="textTwo"></div>
+    <div class="textContainer" id="textThree"></div>
+    <div id="progressContainer">
+      <div id="progressBar"> </div>
+    </div>
+  </div>
+
+  <!----- don't adjust anything above this line except the episode title------>
+
+  <div class="slidesets">
+    <!---------------------------------------third slide set---------------------------->
+    <p><b>Scenario 3: The Art Market</b></p>
+    <p>Imagine you're going to sell your artwork at a market.</p>
+    <p>Your friend is considering doing the same thing.</p>
+
+    <P>Should you share a booth to showcase your craft? </P>
+    <p>Or set up your own?</p>
+    <p>If you combine, you could have a more attractive booth and draw in more customers.</p>
+
+    <p>However, it might draw more attention to your friend's crafts than to yours.</p>
+    <p>If you have your own, you get the full attention and the sales. But it will cost more.</p>
+    <p>Discuss with your room: What do you choose? <button id="replayButton"></button></p>
+
+
+  </div>
+
+
+
+
+  <div class="timer"> 5:00 </div><div class="elementCounter">1 of X</div>
+  <script src="script.js"></script>
+  <script src="slidecode.js"></script>
+</body>
+
+</html>

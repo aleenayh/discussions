@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Context Pages</title>
+</head>
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+        
+    <div class="container" id="slideBaseContainer">
+        <div class="imagePosition"></div>
+        <div class="textContainer fullwidth" id="textOne"></div>
+        <div class="textContainer fullwidth" id="textTwo"></div>
+        <div class="textContainer fullwidth" id="textThree"></div>
+        <div id="progressContainer"><div id="progressBar"> </div></div>
+      </div>
+      
+      <!----- don't adjust anything above this line except the episode title------>
+        
+      <div class="slidesets">
+        <!---- first set of "slides" (time-bundled content) ------->
+        <p>Welcome to this week's student-led Discussion. Let's get started.</p>
+        <p>This week, you'll work through a classic ethics problem.</p>
+        <p>Your challenge is to <b>explain your thinking</b> to your teammates…<br><br>…and <b>give them space</b> to explain theirs.        </p>
+        
+        <p>At the end of the session, we'll ask how it went.</p>
+        <p>As always, press the <b>?</b> in the corner if you want an adult to visit the room.<br><br>
+        To replay text you've already seen, press<img src="/images/reset.png" id="lilReplay"></p>
+        <p><span class="splitContainer"><span class="split">Discuss.</span> <span class="split">Listen.</span> <span class="split">Learn from each other.</span></span>
+        
+        <button id="replayButton"></button></p>
+      </div>
+
+
+
+
+        <div class="timer"> 5:00 </div>
+        <div class="elementCounter">1 of X</div>
+    <script src="script.js"></script>
+    <script src="slidecode.js"></script>
+</body>
+</html>

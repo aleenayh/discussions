@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+    </div>
+
+    <!----------------------------zero-------------------->
+    <div class="container voteBox">
+        <div class="voteQuestionContainer">
+            <h1>Which route should the herd take?</h1>
+
+         <div class="voteButtonBox squares">
+            <button class="voteChoice"><img src="/images/north.jpg"> Northern Route</button>
+            <button class="voteChoice"><img src="/images/east.jpg"> Eastern Route</button>
+            <button class="voteChoice bottom"><img src="/images/south.jpg"> Southern Route</button>
+            <button class="voteChoice bottom"><img src="/images/west.jpg"> Western Route</button>
+         </div>
+         <span class="reflectionResult leftHalf"><h>Here are the success rates for each path:</h>
+            <p>Northern Route: 60%</p>
+            <p>Eastern Route: 70%</p>
+            <p>Southern Route: 50%</p>
+            <p>Western Route: 65%</p>
+            <p><br>Why do you think the results ended up this way?</p>
+         </span></div>
+     
+     
+         <div class="voteResultContainer">
+            
+
+
+
+             <h1 class="tiny">Here's what other students said:</h1>
+             <p> </p>
+             <div class="chartBox"><span class="liveFromNewYork"><span class="blinking">•</span> LIVE</span>
+                 <canvas class="resultsChart smaller"></canvas>
+             </div>
+         </div>
+     </div>
+
+    
+
+
+    <div class="timer"> 1:00 </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="votecode.js"></script>
+</body>
+
+</html>

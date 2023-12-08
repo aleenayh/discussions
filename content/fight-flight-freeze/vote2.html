@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+    </div>
+
+
+    <div class="container voteBox">
+        <div class="voteHeaderBar">
+<div class="voteHeader">You're playing basketball.<Br>
+     The score is tied and you have the ball.</div>
+    <div id="dummyTimer">0:60</div><div id="scenarioEndTime">20000</div><div id="scenarioFullTime">60000</div></div>
+
+
+
+       <div class="voteQuestionContainer">
+        <h>TAKE THE SHOT or PASS?</h> <br>
+        <video class="rapidVoteImg" autoplay loop muted playsinline>
+            <source src="images/basketball.mp4" type="video/mp4">
+          </video>
+        <span class="voteContext">You have the highest shooting percentage on the team.</span>
+        <span class="voteContext">Your teammate is wide open.</span>
+            <span class="voteContext">However, that teammate is on the wrong side of the court. </span>
+            <span class="voteContext">Your defender is out of position. You have a clear shot.</span>
+        <div class="voteButtonBox">
+            <button class="voteChoice">TAKE THE SHOT</button>
+            <button class="voteChoice">PASS THE BALL</button>
+        </div>
+        </div>
+    
+    
+        <div class="voteResultContainer">
+            <span class="liveFromNewYork"><span class="blinking">•</span> LIVE</span>
+                <canvas class="resultsChart"></canvas>
+
+                <div id="paralysis">The game ended with you just holding the ball.<br>
+                    What were you waiting for?
+                </div>
+
+            <span class="reflectionResult"><h>Now...</h>
+                <br><br>Read the rest of the information.
+                <br><br>What was the <b>right decision</b> in this scenario?
+                <br><br>Could you have made a <b>quicker</b> decision?<br> Or was <b>waiting</b> a good idea?
+            </span>
+        </div>
+        <div class="timer"> 5:00 </div>
+    </div>
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="votecode.js"></script>
+</body>
+
+</html>

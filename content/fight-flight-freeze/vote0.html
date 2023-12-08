@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+    </div>
+
+
+    <div class="container voteBox">
+        <div class="voteHeaderBar">
+<div class="voteHeader">Your decision is final.<br>
+    The scenario could end at any time.</div>
+    <span id="dummyTimer">0:60</span><div id="scenarioEndTime">100</div><div id="scenarioFullTime">60000</div></div>
+
+
+
+       <div class="voteQuestionContainer">
+        <h>WALK TO CAR or RUN FAR AWAY?</h> <br>
+        <img src="/images/bear1.png" class="rapidVoteImg">
+        <img src="/images/bear1.png" class="rapidVoteImg">
+        <img src="/images/bear2.png" class="rapidVoteImg">
+        <img src="/images/bear3.png" class="rapidVoteImg">
+        <span class="voteContext">Actually, here's some more information…</span>
+        <span class="voteContext">The bear is far, far away…</span>
+            <span class="voteContext">…and it's just a forest ranger in a costume... </span>
+            <span class="voteContext">…who wants to give you free tickets to a nature talk.</span>
+        <div class="voteButtonBox">
+            <button class="voteChoice">WALK TO CAR</button>
+            <button class="voteChoice">RUN FAR AWAY</button>
+        </div>
+        </div>
+    
+    
+        <div class="voteResultContainer">
+            <span class="liveFromNewYork"><span class="blinking">•</span> LIVE</span>
+                <canvas class="resultsChart"></canvas>
+
+                <div id="paralysis">You failed to make a decision 
+                    before the scenario ended. We call this <b>analysis paralysis</b>
+                    &ndash; being too focused analysing all the details to react 
+                    when you should. Next time try to think faster!
+                </div>
+
+            <span class="reflectionResult"><h>So...</h>
+                <br><br>Did you make a <b>rational decision?</b>
+
+                <br><Br>Or … did you just <b>react</b> to the first information you saw?
+                
+                <br><br>Share your experience with your team.
+                <br><br>Who reacted earlier or later? Why?
+            </span>
+        </div>
+        <div class="timer"> 5:00 </div>
+    </div>
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="votecode.js"></script>
+</body>
+
+</html>

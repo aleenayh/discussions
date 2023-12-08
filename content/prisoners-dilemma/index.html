@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Start Page</title>
+</head>
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+        <h>Welcome to Discussions</h>
+    
+        <p>This page is for internal use only. 
+        No student should ever see this page, it's just for Aleena to test things without having to mess around with the timeline.<br><br><br><br>
+        
+        If you're seeing this page and you think you shouldn't, add /index.html to the end of the url and try again!</p>
+        <button id="toSlides">Force slides</button>
+        <button id="toGame">Force game</button>
+        <button id="toVote">Force vote</button>
+
+
+        <p style="max-height:50vh; overflow:auto;">Patch notes (ongoing, most recent at top):
+        <ul>
+            <li>added footer to goodbye page to callout what timer is for</li>
+            <li>added "end session" state between mins :33-:35</li>
+            <li>fixed timer sync issue - seconds count :P</li>
+            <li>added logic to handle late arrivals inside game state</li>
+            <li>improved interactive button and timer UI</li>
+            <li>fixed timer error at top of hour</li>
+            <li>fixed load error for auto transitions prior to start of hour</li>
+            <li>fixed voting issue - currently formatted in commonJS for serverless functions, pointing to postgres</li>
+            <li>explicit "replay" button on slides, slide counter in bottom right</li>
+            <li>redesigned vote page (horizontal flex styling)</li>
+            <li>fixed positioning on slides for small screens (flex styling + font size adjustment function)</li>
+            <li>added timer to pre-session mins (after :33 mins)</li>
+            <li>switched from gif to mp4 files for faster page load</li>
+            <li>interactive points to new game (Prisoner's Dilemma demo)</li>
+            <li>auto transitions are on</li>
+            <li>countdowns run automatically using SERVER time</li>
+        </ul>
+        </p>
+
+
+
+
+        <div class="timer"> 5:00 </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

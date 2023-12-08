@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"> <span
+            class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <div class="container spectrumVote">
+        <div class="voteQuestionContainer">
+            <h1>Rank your hiring recommendations.</h1>
+            <div class="instructionText">The top three will be hired. Two will not.</div>
+        </div>
+
+        <div id="spectrum">
+            <div class="voteChoice firstDrag" style="background-image:url('/images/storyboard.jpg')" title="Game Designer"></div>
+            <div class="voteChoice secondDrag" style="background-image:url('/images/computer.jpg')" title="Software Developer"></div>
+            <div class="voteChoice thirdDrag" style="background-image:url('/images/modeler.jpg')" title="Graphic Artist"></div>
+            <div class="voteChoice fourthDrag" style="background-image:url('/images/groundcontrol.jpg')" title="Beta Tester"></div>
+            <div class="voteChoice fifthDrag" style="background-image:url('/images/games.jpg')" title="Marketing Manager"></div>
+        </div> 
+        <div id="reflectionQuestion">
+            <div class="cyoaResult">You didn't hire the Game Designer. Good design leads to good gameplay. No designer at all leads to…uh-oh. Does this seem like the right move to ignore this role?</div>
+            <div class="cyoaResult">You didn't hire the Software Developer. Code is the backbone of games. No matter how good it looks, it has to actually … work. Does it seem like the right move to ignore this role?</div>
+            <div class="cyoaResult">You didn't hire the Graphic Artist. In the competitive gaming market, can you risk having a game with bad graphics? Does this seem like the right move?</div>
+            <div class="cyoaResult">You didn't hire the Beta Tester. Without this role, your game might have bugs and glitches when released. Does this seem like the right move?</div>
+            <div class="cyoaResult">You didn't hire the Marketing Manager. So, you made a great game, but without marketing, no one will know it exists. Does this seem like the right move?</div>
+        </div>
+        <div class="spectrumDesign">
+            <div class="arrow-left"></div>
+            <div class="gradientBar"></div>
+            <div class="arrow-right"></div>
+        </div>
+        <div class="leftLabel">Least Important</div>
+        <div class="rightLabel">Most Important</div>
+        <div id="contextBlock">
+        </div>
+
+        <div id="spectrumResultsReturnHere">
+            <div class="instructionText">On average, other students said...</div>
+            <div class="voteChoice firstDrag" style="background-image:url('/images/storyboard.jpg')" title="Game Designer"></div>
+            <div class="voteChoice secondDrag" style="background-image:url('/images/computer.jpg')" title="Software Developer"></div>
+            <div class="voteChoice thirdDrag" style="background-image:url('/images/modeler.jpg')" title="Graphic Artist"></div>
+            <div class="voteChoice fourthDrag" style="background-image:url('/images/groundcontrol.jpg')" title="Beta Tester"></div>
+            <div class="voteChoice fifthDrag" style="background-image:url('/images/games.jpg')" title="Marketing Manager"></div>
+        </div>
+    </div>
+
+
+
+    <div class="timer"> 5:00 </div>
+    <div id="fakeTimer">0:00</div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="dragvote.js"></script>
+</body>
+
+</html>

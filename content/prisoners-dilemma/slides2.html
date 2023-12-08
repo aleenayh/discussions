@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Context Pages</title>
+</head>
+<body>
+  <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+        
+    <div class="container" id="slideBaseContainer">
+        <div class="imagePosition"><img src="/images/logo.png"></div>
+        <div class="textContainer" id="textOne"></div>
+        <div class="textContainer" id="textTwo"></div>
+        <div class="textContainer" id="textThree"></div>
+        <div id="progressContainer"><div id="progressBar"> </div></div>
+      </div>
+      
+      <!----- don't adjust anything above this line except the episode title------>
+        
+      <div class="slidesets">
+        <!-----------NEED TO DO THIS ---- second set of slides----------------->
+        <video class="slideImg" autoplay loop muted playsinline><source src="images/img01.mp4" type="video/mp4"></video>
+        <p>Imagine your parents leave you and your sibling Jordan alone in a house.</p>
+        <p>While they're gone, a lamp breaks.</p>
+        <p>How did it happen? Well, it depends on who you ask.</p>
+        <video class="slideImg" autoplay loop muted playsinline><source src="images/img02.mp4" type="video/mp4"></video>
+        <p>This is a classic ethical scenario called <b>The Prisoner's Dilemma.</b></p>
+        <p>If you both stay silent, the punishment will be less for both of you.</p>
+        <p>But if one sibling tells on the other, the one who spoke up will get off easy while the other will be punished more harshly.</p>
+        <video class="slideImg" autoplay loop muted playsinline><source src="images/img02.mp4" type="video/mp4"></video>
+        <p>In a few moments, you'll be placed in some different scenarios.</p>
+        <p>Each time, you'll have to make a decision:<br><br>
+          Blame your sibling Jordan? Or stay silent and hope Jordan doesn't blame you?</p>
+        <p>Although you'll discuss your decisions with the room, <b>your choices &mdash; and consequences &mdash; are yours alone.</b><button id="replayButton"></button></p>
+      </div>
+
+
+
+
+        <div class="timer"> 5:00 </div><div class="elementCounter">1 of X</div>
+    <script src="script.js"></script>
+    <script src="slidecode.js"></script>
+</body>
+</html>

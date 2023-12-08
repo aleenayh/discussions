@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"> <span
+            class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <div class="container spectrumVote">
+        <div class="voteQuestionContainer"><h1>Which form of communication is most clear?</h1>
+            <div class="instructionText">Drag to order from least to most.</div>
+        </div>
+
+        <div id="spectrum">
+            <div class="voteChoice text" style="background-image:url('/images/text.jpg')" title="Send a Text"></div>
+            <div class="voteChoice letter" style="background-image:url('/images/letter.jpg')" title="Write a Letter"></div>
+            <div class="voteChoice person" style="background-image:url('/images/talk.jpg')" title="Talk in Person"></div>
+            <div class="voteChoice phone" style="background-image:url('/images/call.jpg')" title="Call on Phone"></div>
+            <div class="voteChoice feed" style="background-image:url('/images/feed.jpg')" title="Social Media Post"></div>
+        </div>
+        <div id="reflectionQuestion">Do your answers here change depending on who you're communicating with?</div>
+        <div class="spectrumDesign">
+            <div class="arrow-left"></div>
+            <div class="gradientBar"></div>
+            <div class="arrow-right"></div>
+        </div>
+        <div class="leftLabel">Least</div>
+        <div class="rightLabel">Most</div>
+
+<div id="contextBlock">
+</div>
+
+        <div id="spectrumResultsReturnHere">
+            <div class="instructionText">On average, other students said...</div>
+            <div class="voteChoice text" style="background-image:url('/images/text.jpg')" title="Send a Text"></div>
+            <div class="voteChoice letter" style="background-image:url('/images/letter.jpg')" title="Write a Letter"></div>
+            <div class="voteChoice person" style="background-image:url('/images/talk.jpg')" title="Talk in Person"></div>
+            <div class="voteChoice phone" style="background-image:url('/images/call.jpg')" title="Call on Phone"></div>
+            <div class="voteChoice feed" style="background-image:url('/images/feed.jpg')" title="Social Media Post"></div>
+        </div>
+    </div>
+
+
+
+    <div class="timer"> 5:00 </div><div id="fakeTimer">0:00</div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="dragvote.js"></script>
+</body>
+
+</html>

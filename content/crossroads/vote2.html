@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+    </div>
+
+    <div class="container voteBox forceFlex">
+        <div class="voteQuestionContainer">
+            <h1>Choose two cities.</h1>
+            <P class="tiny">You have $100 M total to spend. $<span id="funds">100</span>M remains.</P>
+
+         <div class="voteButtonBox squares">
+            <button class="voteChoice">NYC, USA: $50M</button>
+            <button class="voteChoice">Tokyo, Japan: $55M</button>
+            <button class="voteChoice">Cairo, Egypt: $25M</button>
+            <button class="voteChoice">London, UK: $75M</button>
+            <button class="voteChoice">Shanghai, China: $45M</button>
+            <button class="voteChoice">São Paulo, Brazil: $25M</button>
+            <button class="voteChoice">Mumbai, India: $15M</button>
+         </div>
+
+    </div>
+     
+     
+         <div class="voteResultContainer hqResults">
+            <div class="spinningWheel doubleSize"></div>
+            <button id="lockIn">Submit</button>
+            <p>Both of your headquarters <b>succeeded.</b> Nicely done!<br><br>
+            Which factor do you think contributed most to your success?<br><br>
+        How did the rest of your room do?</p>
+
+        <p>At least one of your two headquarters <B>failed.</B> <br><br>
+            Which factor should you have paid more attention to?<br><br>
+        How did the rest of your room do?</p>
+         </div>
+     </div>
+
+
+
+    <div class="timer"> 1:00 </div>
+
+
+    <script src="script.js"></script>
+    <script src="cyoa.js"></script>
+</body>
+
+</html>

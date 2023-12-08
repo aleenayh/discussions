@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"> <span
+            class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <div class="container spectrumVote">
+        <div class="voteQuestionContainer">
+            <h1>Drag options to rank.</h1>
+            <div class="instructionText">When the voting concludes, we'll show you the real-world statistics.</div>
+        </div>
+
+        <div id="spectrum">
+            <div class="voteChoice thirdDrag" style="background-image:url('/images/construction.jpg')" title="Construction company"></div>
+            <div class="voteChoice firstDrag" style="background-image:url('/images/logging.jpg')" title="Forestry company"></div>
+            <div class="voteChoice fourthDrag" style="background-image:url('/images/lawyer.jpg')" title="Law firm"></div>
+            <div class="voteChoice fifthDrag" style="background-image:url('/images/movies.jpg')" title="Movie studio"></div>
+            <div class="voteChoice secondDrag" style="background-image:url('/images/realestate.jpg')" title="Real estate firm"></div>
+        </div> 
+        <div id="reflectionQuestion" class="topFloatReflection">How many did you get right? How does that compare to your teammates?
+
+        </div>
+        <div class="spectrumDesign">
+            <div class="arrow-left"></div>
+            <div class="gradientBar"></div>
+            <div class="arrow-right"></div>
+        </div>
+        <div class="leftLabel">Least Risk of Failure</div>
+        <div class="rightLabel">Most Risk of Failure</div>
+        
+
+            <div class="instructionText hidden" id="resultTopper">Here's the truth...</div>
+            <div id="contextBlock">
+                <div class="irlStat">Forestry company: 13.8% failure rate. <span class="tiny">[lendingtree.com]</span></div>
+                <div class="irlStat">Real estate firm: 16.3% failure rate. <span class="tiny">[lendingtree.com]</span></div>
+                <div class="irlStat">Construction company: 18.9% failure rate. <span class="tiny">[lendingtree.com]</span></div>
+                <div class="irlStat">Law firm: 23.4% failure rate. <span class="tiny">[lendingtree.com]</span></div>
+                <div class="irlStat">Movie studio: 26.4% failure rate. <span class="tiny">[lendingtree.com]</span></div>
+            </div>
+            <div id="IRLResults">
+                <div class="voteChoice firstDrag" style="background-image:url('/images/logging.jpg')" title="Forestry company"></div>
+                <div class="voteChoice secondDrag" style="background-image:url('/images/realestate.jpg')" title="Real estate firm"></div>
+                <div class="voteChoice thirdDrag" style="background-image:url('/images/construction.jpg')" title="Construction company"></div>
+                <div class="voteChoice fourthDrag" style="background-image:url('/images/lawyer.jpg')" title="Law firm"></div>
+                <div class="voteChoice fifthDrag" style="background-image:url('/images/movies.jpg')" title="Movie studio"></div>
+                
+        </div>
+
+
+    </div>
+
+
+
+    <div class="timer"> 5:00 </div>
+    <div id="fakeTimer">0:00</div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="dragvote.js"></script>
+</body>
+
+</html>

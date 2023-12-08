@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="/../style.css" />
+    <title>Voting</title>
+  </head>
+
+  <body>
+    <div class="header" id="standardHeader">
+      <img class="logo" src="images/logo.png" />
+      <span class="headerGradient">Teams</span> ◈
+      <span id="episodeTitle"></span>
+    </div>
+
+    <!---------one----------->
+    <div class="container starVote">
+      <div class="voteQuestionContainer">
+        <h1>Did your group ask good questions today?</h1>
+
+        <div class="starsContainer delay">
+          <span class="star" id="1">&#9733;</span>
+          <span class="star" id="2">&#9733;</span>
+          <span class="star" id="3">&#9733;</span>
+          <span class="star" id="4">&#9733;</span>
+          <span class="star" id="5">&#9733;</span>
+        </div>
+        <div class="starExplainers">
+          <span class="explainer">Not really. We mostly gave answers today.</span>
+          <span class="explainer"> </span>
+          <span class="explainer">Sort of. We asked a few questions.</span>
+          <span class="explainer"> </span>
+          <span class="explainer">Absolutely. Our questions made the discussion better.</span>
+        </div>
+
+        <p class="preReflect">
+            Good discussions need insightful answers, but they also need
+            insightful questions.
+          </p>
+
+        <div id="reflectionResult" class="leftHalf">
+          <p>The right <i>questions</i> unlock the right <i>answers.</i></p>
+
+          <h1>
+            Does this apply more to Discussion sessions, Play sessions, or both?
+            How so?
+          </h1>
+        </div>
+      </div>
+
+      <div class="voteResultContainer">
+        <div class="chartBox">
+          <canvas class="resultsChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="timer">5:00</div>
+
+    <script src="/../scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/../scripts/starvote.js"></script>
+  </body>
+</html>

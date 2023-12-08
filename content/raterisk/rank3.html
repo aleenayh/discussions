@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"> <span
+            class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <div class="container spectrumVote">
+        <div class="voteQuestionContainer">
+            <h1>Drag options to rank.</h1>
+            <div class="instructionText">When the voting concludes, we'll show you the real-world statistics.</div>
+        </div>
+
+        <div id="spectrum">
+            <div class="voteChoice fifthDrag" style="background-image:url('/images/skis.jpg')" title="Be an Olympic downhill skier for Norway"></div>
+            <div class="voteChoice fourthDrag" style="background-image:url('/images/gym.jpg')" title="Be a US Olympic Gymnast"></div>
+            <div class="voteChoice thirdDrag" style="background-image:url('/images/football.jpg')" title="Play in the World Cup in France"></div>
+            <div class="voteChoice firstDrag" style="background-image:url('/images/footballer.jpg')" title="Be a US professional football player"></div>
+            <div class="voteChoice secondDrag" style="background-image:url('/images/basketball.jpg')" title="Be a US professional women's basketball player"></div>
+        </div> 
+        <div id="reflectionQuestion" class="topFloatReflection">Considering these odds, would you want to try and be a pro athlete?
+
+        </div>
+        <div class="spectrumDesign">
+            <div class="arrow-left"></div>
+            <div class="gradientBar"></div>
+            <div class="arrow-right"></div>
+        </div>
+        <div class="leftLabel">Easiest to Make Pro</div>
+        <div class="rightLabel">Hardest to Make Pro</div>
+        
+
+            <div class="instructionText hidden" id="resultTopper">Here are your odds of success in each sport...</div>
+            <div id="contextBlock">
+                <div class="irlStat">US Pro Football: 1 in 4,438. </div>
+                <div class="irlStat">US women's basketball: 1 in 5,000. </div>
+                <div class="irlStat">World Cup in France: 1 in 44,898. </div>
+                <div class="irlStat">US Olympic Gymnast: 1 in 571,429. </div>
+                <div class="irlStat">Olympic Downhill Skier for Norway: 1 in 3,474,576. </div>
+            </div>
+            <div id="IRLResults">
+                <div class="voteChoice firstDrag" style="background-image:url('/images/footballer.jpg')" title="Be a US professional football player"></div>
+                <div class="voteChoice secondDrag" style="background-image:url('/images/basketball.jpg')" title="Be a US professional women's basketball player"></div>
+                <div class="voteChoice thirdDrag" style="background-image:url('/images/football.jpg')" title="Play in the World Cup in France"></div>
+                <div class="voteChoice fourthDrag" style="background-image:url('/images/gym.jpg')" title="Be a US Olympic Gymnast"></div>
+                <div class="voteChoice fifthDrag" style="background-image:url('/images/skis.jpg')" title="Be an Olympic downhill skier for Norway"></div>
+                
+        </div>
+
+
+    </div>
+
+
+
+    <div class="timer"> 5:00 </div>
+    <div id="fakeTimer">0:00</div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="dragvote.js"></script>
+</body>
+
+</html>

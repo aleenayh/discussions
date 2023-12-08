@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+    </div>
+
+
+    <div class="container voteBox">
+        <div class="voteHeaderBar">
+<div class="voteHeader">You're playing Proxima.<br>
+What's the best strategy?</div>
+    <div id="dummyTimer">1:30</div><div id="scenarioEndTime">35000</div><div id="scenarioFullTime">90000</div></div>
+
+
+
+       <div class="voteQuestionContainer">        <h>BUILD or DISRUPT?</h> <br>
+        <video class="rapidVoteImg" autoplay loop muted playsinline>
+            <source src="images/proxima.mp4" type="video/mp4">
+          </video>
+        <span class="voteContext">Your team is in first place.</span>
+        <span class="voteContext">The second place team is moving towards your best planet.</span>
+            <span class="voteContext">The third place team is disrupting the second place team.</span>
+            <span class="voteContext">The third place team is near some 2x planets.</span>
+            <span class="voteContext">The third place team's score is growing fastest.</span>
+        <div class="voteButtonBox">
+            <button class="voteChoice">KEEP BUILDING</button>
+            <button class="voteChoice">DISRUPT OTHERS</button>
+        </div>
+        </div>
+    
+    
+        <div class="voteResultContainer">
+            <span class="liveFromNewYork"><span class="blinking">•</span> LIVE</span>
+                <canvas class="resultsChart"></canvas>
+
+                <div id="paralysis">Your team didn't reach a consensus. They could not win the game.
+                </div>
+
+            <span class="reflectionResult"><h>Discuss:</h>
+                <br><br>In Proxima, is it better to <b>act quickly</b><Br> or <b> take time</b> to think?<br><br>
+
+                    Do you <i>ever</i> have all the information<Br> you need in a Proxima game?
+            </span>
+        </div>
+        <div class="timer"> 5:00 </div>
+    </div>
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="votecode.js"></script>
+</body>
+
+</html>

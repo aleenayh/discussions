@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Context Pages</title>
+</head>
+
+<body>
+  <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+
+  <div class="container" id="slideBaseContainer">
+    <div class="imagePosition"><video autoplay loop muted playsinline>
+        <source src="images/img11.mp4" type="video/mp4">
+      </video></div>
+    <div class="textContainer" id="textOne"></div>
+    <div class="textContainer" id="textTwo"></div>
+    <div class="textContainer" id="textThree"></div>
+    <div id="progressContainer">
+      <div id="progressBar"> </div>
+    </div>
+  </div>
+
+  <!----- don't adjust anything above this line except the episode title------>
+
+  <div class="slidesets">
+    <!--------------------------second slide set------------------------->
+    <p>Now that you've seen how the dilemma works, let's work through real life scenarios.</p>
+    <p><b>Scenario 2: The Project Partnership</b> <br><br>Imagine you're given a major project.</p>
+    <p>You can either work with a partner or alone.</p>
+
+    <p>But is your partner <b>a hard worker?</b> Or not?<br>If they <i>are</i>, you'll have a better project working together than you would alone.</p>
+    <p>If they <i>aren't</i>, you'll do all the work, and they'll get a good grade.</p>
+    <p>What makes the most sense in this scenario? Discuss with your group. <button id="replayButton"></button></p>
+  </div>
+
+
+
+
+  <div class="timer"> 5:00 </div><div class="elementCounter">1 of X</div>
+  <script src="script.js"></script>
+  <script src="slidecode.js"></script>
+</body>
+
+</html>

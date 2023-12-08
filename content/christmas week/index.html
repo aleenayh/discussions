@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Introduction</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span
+            class="headerGradient">Teams</span> ◈ Discussions</div>
+
+    <div class="container" id="slideBaseContainer">
+        <div class="imagePosition"></div>
+        <div class="textContainer fullwidth" id="textOne"></div>
+        <div class="textContainer fullwidth" id="textTwo"></div>
+        <div class="textContainer fullwidth" id="textThree"></div>
+        <div id="progressContainer">
+            <div id="progressBar"> </div>
+        </div>
+    </div>
+
+    <!----- don't adjust anything above this line except the episode title------>
+
+    <div class="slidesets">
+        <p>Welcome. We're glad you're here.</p>
+        <p>Every five minutes, your group will get a new discussion prompt.
+            <br>Then you'll vote and see what other Synthesis students thought.
+        </p>
+        <p>There are no right or wrong answers...
+            <br>which is good, because these questions are tough!
+        </p>
+
+        <p>If you need an adult, press the <b>?</b> in the top right corner.<br>
+            If you need to re-read the context, press the <img src="/images/reset.png" id="lilReplay"> button.</p>
+        <p>While you wait, here's a question:
+            <Br><b>If you could have any superpower for only one day,<br>
+                what would it be?</b> Why?
+        </p>
+        <p>Whoever has been at Synthesis <b>longest</b> in the group, you answer first. <br>Then it's everyone else's
+            turn.<button id="replayButton"></button></p>
+    </div>
+
+    <div class="timer"> 5:00 </div>
+    <div class="footer">until your first discussion prompt</div>
+    <div class="elementCounter">1 of X</div>
+
+    <script src="script.js"></script>
+    <script src="slidecode.js"></script>
+</body>
+
+</html>

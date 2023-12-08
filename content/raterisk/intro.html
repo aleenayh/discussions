@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Intro</title>
+  </head>
+
+  <body>
+    <div class="header" id="standardHeader">
+      <img class="logo" src="images/logo.png" /><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <div class="container" id="slideBaseContainer">
+      <div id="imagePosition">
+        <div class="slideImg displayed"></div>
+        <video
+          class="slideImg delayedVideo"
+          autoplay
+          src="/images/repeat.mp4"
+        ></video>
+        <video
+          class="slideImg"
+          autoplay
+          loop
+          muted
+          src="/images/deepthink.mp4"
+        ></video>
+        <video
+          class="slideImg"
+          autoplay
+          loop
+          muted
+          src="/images/deepthink2.mp4"
+        ></video>
+      </div>
+      <div class="textContainerWrapper"></div>
+
+      <div id="progressContainer">
+        <div id="progressBar"></div>
+      </div>
+    </div>
+
+    <div class="slidesets">
+      <p>Making complex decisions means weighing options. <b>A lot</b> of options.</p>
+
+      <p>Some people jump to one option and don't change their mind.</p>
+      
+      <p>They just repeat the same thing, again and again.</p>
+
+      <p>But good thinkers take an extra step.</p>
+
+      <p>First, they <b>consider all the options fairly.</b></p>
+      
+      <p>Then, they judge the options and make their decision.</p>
+
+
+      <p>Your team's focus today is to <b>consider all options.</b></p>
+
+<p>Listen carefully. At the end, we'll ask you <b>who did this the best.</b></p>
+
+<p>Self-check: are you a person who jumps to answers, or considers all options first?</p>
+    </div>
+
+    <div class="timer">5:00</div>
+    <div class="elementCounter">1 of X</div>
+    <script src="script.js"></script>
+    <script src="focaltext.js"></script>
+  </body>
+</html>

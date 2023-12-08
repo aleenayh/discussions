@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"> <span
+            class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <div class="container spectrumVote">
+        <div class="voteQuestionContainer">
+            <h1>Who deserves each recognition method?</h1>
+            <div class="instructionText">Drag each employee to the best recognition option.</div>
+        </div>
+
+        <div id="spectrum">
+            <div class="voteChoice firstDrag" style="background-image:url('/images/coach.jpg')" title="Coach"></div>
+            <div class="voteChoice secondDrag" style="background-image:url('/images/director.jpg')" title="General Manager"></div>
+            <div class="voteChoice thirdDrag" style="background-image:url('/images/mvp.jpg')" title="Star Athlete"></div>
+            <div class="voteChoice fourthDrag" style="background-image:url('/images/therapist.jpg')" title="Physical Therapist"></div>
+        </div>
+        <div id="reflectionQuestion">Do these results seem fair?</div>
+        <div class="spectrumDesign">
+            <div class="bucket" style="background-color:#fc3604;">Nothing</div>
+            <div class="bucket" style="background-color:#fc5204;">Plaque on Seat</div>
+            <div class="bucket" style="background-color:#fd7707;">Named Section</div>
+            <div class="bucket" style="background-color:#fe9c0a;">Gigantic Statue</div>
+        </div>
+        <div id="contextBlock">
+        </div>
+
+        <div id="spectrumResultsReturnHere">
+            <div class="instructionText">On average, other students said...</div>
+            <div class="voteChoice firstDrag" style="background-image:url('/images/coach.jpg')" title="Coach"></div>
+            <div class="voteChoice secondDrag" style="background-image:url('/images/director.jpg')" title="General Manager"></div>
+            <div class="voteChoice thirdDrag" style="background-image:url('/images/mvp.jpg')" title="Star Athlete"></div>
+            <div class="voteChoice fourthDrag" style="background-image:url('/images/therapist.jpg')" title="Physical Therapist"></div>
+        </div>
+    </div>
+
+
+
+    <div class="timer"> 5:00 </div>
+    <div id="fakeTimer">0:00</div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="dragvote.js"></script>
+</body>
+
+</html>

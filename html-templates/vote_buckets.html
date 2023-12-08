@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"> <span
+            class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <div class="container spectrumVote">
+        <div class="voteQuestionContainer">
+            <h1>Who deserves the most compensation?</h1>
+            <div class="instructionText">Drag each employee to the best compensation option.</div>
+        </div>
+
+        <div id="spectrum">
+            <div class="voteChoice text" style="background-image:url('/images/u.jpg')" title="u"></div>
+            <div class="voteChoice letter" style="background-image:url('/images/v.jpg')" title="v"></div>
+            <div class="voteChoice phone" style="background-image:url('/images/y.jpg')" title="y"></div>
+            <div class="voteChoice feed" style="background-image:url('/images/z.jpg')" title="z"></div>
+        </div>
+        <div id="reflectionQuestion">Is the easiest form of communication the most effective?</div>
+        <div class="spectrumDesign">
+            <div class="bucket" style="background-color:#fc3604;">$</div>
+            <div class="bucket" style="background-color:#fc5204;">$ $</div>
+            <div class="bucket" style="background-color:#fd7707;">$ $ $</div>
+            <div class="bucket" style="background-color:#fe9c0a;">$ $ $ $</div>
+        </div>
+        <div id="contextBlock">
+        </div>
+
+        <div id="spectrumResultsReturnHere">
+            <div class="instructionText">On average, other students said...</div>
+            <div class="voteChoice text" style="background-image:url('/images/u.jpg')" title="u"></div>
+            <div class="voteChoice letter" style="background-image:url('/images/v.jpg')" title="v"></div>
+            <div class="voteChoice person" style="background-image:url('/images/w.jpg')" title="w"></div>
+            <div class="voteChoice phone" style="background-image:url('/images/x.jpg')" title="x"></div>
+        </div>
+    </div>
+
+
+
+    <div class="timer"> 5:00 </div>
+    <div id="fakeTimer">0:00</div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="dragvote.js"></script>
+</body>
+
+</html>

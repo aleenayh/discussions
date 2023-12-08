@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Context Pages</title>
+</head>
+
+<body>
+  <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span
+      class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+
+  <div class="container" id="slideBaseContainer">
+    <div class="imagePosition"><video autoplay loop muted playsinline>
+      <source src="images/board.mp4" type="video/mp4">
+    </video></div>
+    <div class="textContainer" id="textOne"></div>
+    <div class="textContainer" id="textTwo"></div>
+    <div class="textContainer" id="textThree"></div>
+    <!---------where to insert helper if applicable-->
+    <div id="progressContainer">
+      <div id="progressBar"> </div>
+    </div>
+  </div>
+
+
+  <div class="slidesets">
+    <p>Okay, time's up.</p>
+
+<p>You have a few minutes to prepare your presentation.</p>
+
+<p>That's right. <b>Presentation.</b></p>
+
+<p>When that timer runs out,</p>
+
+<p>your team will have 60 seconds to explain your design.</p>
+
+<p> </p>
+
+<p>By the way, we'll be <b>recording</b> your presentation to compare to other groups.</p>
+
+<p> </p>
+
+<p>How will you convince us that your school is the <b>most effective</b>?</p>
+
+<p>What examples can you use? How can you make the case for each element of your school plan?</p>
+
+<p>Who is going to say what?
+
+      <button id="replayButton"></button>    </p>
+  </div>
+
+
+
+
+  <div class="timer"> 5:00 </div>
+  <div class="elementCounter">1 of X</div>
+  <script src="script.js"></script>
+  <script src="slide-helper.js"></script>
+</body>
+
+</html>

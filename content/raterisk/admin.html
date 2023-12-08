@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Discussion Admin</title>
+</head>
+
+<body>
+  <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span
+      class="headerGradient">Teams</span> ◈ Discussion Admin </div>
+
+  <div class="container" id="adminPage">
+    <h>What's Live Now?</h>
+    <hr>
+    <B>Session Title:</B> <span id="episodeTitle"></span><br>
+    <b>Automatic Link:</b> <span id="indexLink"></span><br>
+    <b>Session Flow:</b>
+    <div id="adminTableHolder"></div> 
+
+    <br><hr><br>
+    <h>Reset Votes</h>
+    <div id="resetVoteAdmin">
+<div><Br><button id="resetAllVotes">Reset All Votes</button></div>
+<div id="manualVoteAdmin"><p>Manual Reset:</p>
+<form>
+  <div>
+    <label for="checkbox-0"><input type="checkbox" id="checkbox-0" checked> 0</label>
+    <label for="checkbox-1"><input type="checkbox" id="checkbox-1" checked> 1</label>
+    <label for="checkbox-2"><input type="checkbox" id="checkbox-2" checked> 2</label>
+    <label for="checkbox-3"><input type="checkbox" id="checkbox-3" checked> 3</label>
+    <label for="checkbox-4"><input type="checkbox" id="checkbox-4" checked> 4</label>
+    <label for="checkbox-5"><input type="checkbox" id="checkbox-5" checked> 5</label>
+    <label for="checkbox-6"><input type="checkbox" id="checkbox-6" checked> 6</label>
+    <label for="checkbox-7"><input type="checkbox" id="checkbox-7" checked> 7</label>
+    <label for="checkbox-8"><input type="checkbox" id="checkbox-8" checked> 8</label>
+    <label for="checkbox-9"><input type="checkbox" id="checkbox-9" checked> 9</label>
+    <label for="checkbox-10"><input type="checkbox" id="checkbox-10" checked> 10</label>
+    <label for="checkbox-11"><input type="checkbox" id="checkbox-11" checked> 11</label>
+
+  </div>
+</form></div>
+<div id="manualVoteSubmit"><p>(The ID of the vote is the number after "index=" in the URL).</p>
+<button id="resetSelectedVotes">Reset Selected Votes</button></div>
+</div>
+
+<br><hr><br>
+<div id="errorHandlingBox"><h>Error Handling</h><button id="consoleClearButton">Clear Error Logs</button>
+  
+  <div id="consoleLogBox"> /* TODO */ <br>
+  /* In the near future this will be a place to track errors across the entire session */</div>
+</div>
+  </div>
+
+
+  
+
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

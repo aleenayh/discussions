@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Icebreakers</title>
+</head>
+
+<body>
+  <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span
+      class="headerGradient">Teams</span><span> ◈ </span><span id="episodeTitle"></span></div>
+
+  <div class="container" id="slideBaseContainer">
+    <div id="imagePosition">
+      <img class="slideImg displayed" src="/images/graph2.jpg">
+      <video class="slideImg" autoplay muted loop src="images/quotes.mp4" type="video"></video>
+
+    </div>
+    <div class="textContainerWrapper">
+    <div class="textContainer" id="textOne"></div>
+    <div class="textContainer" id="textTwo"></div>
+    <div class="textContainer" id="textThree"></div>
+  </div>
+
+    <!----where the interactive icebreaker goes if we want it back--------->
+
+    <div id="progressContainer">
+      <div id="progressBar"> </div>
+    </div>
+  </div>
+
+  <!----- don't adjust anything above this line except the episode title------>
+
+  <div class="slidesets">
+    <p><b>Halftime.</b></p>
+<p>Your goal today is to <b>encourage discussion.</b></p>
+<p>Adults do this, and you can too.</p>
+
+<p>Here are some <b>actual quotes</b> of Synthesis students encouraging conversation.</p>
+<p>If this is an <b>area you're trying to improve,</b> these are some <b>good examples to consider for second half.</b></p>
+
+
+
+  </div>
+
+  <div class="timer"> 7:00 </div>
+  <div class="elementCounter">1 of X</div>
+
+  <script src="script.js"></script>
+  <script src="slide-helper.js"></script>
+</body>
+
+</html>

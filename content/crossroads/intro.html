@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Intro</title>
+  </head>
+
+  <body>
+    <div class="header" id="standardHeader">
+      <img class="logo" src="images/logo.png" /><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <div class="container" id="slideBaseContainer">
+      <div id="imagePosition">
+        <div class="slideImg displayed"></div>
+        <video
+          class="slideImg"
+          autoplay
+          src="/images/shoutout.mp4"
+        ></video>
+        <img
+          class="slideImg"
+          src="/images/decide.jpg"
+        >
+      </div>
+      <div class="textContainerWrapper"></div>
+
+      <div id="progressContainer">
+        <div id="progressBar"></div>
+      </div>
+    </div>
+
+    <div class="slidesets">
+      <P>Last week asked you which person in your room was the <b>best</b> at considering all options.</P>
+      <P>Thanks to everyone who gave a shout-out.</P>
+      <p>We'll take a similar approach today, but with a new goal.</p>
+
+      <P>Today's session has a <b>lot</b> of information to work through.</P>
+      <P>Your goal today is to <b>maintain focus through complexity.</b> </P>
+      <p>At the end of the session, we'll ask you who kept your team <b>aligned</b> on your objective today.</p>
+
+    </div>
+
+    <div class="timer">5:00</div>
+    <div class="elementCounter">1 of X</div>
+    <script src="script.js"></script>
+    <script src="focaltext.js"></script>
+  </body>
+</html>

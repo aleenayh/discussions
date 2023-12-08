@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+    </div>
+
+
+    <div class="container voteBox forceFlex">
+
+       <div class="voteQuestionContainer">
+        You have full-day, all-access tickets to a major concert.<br>
+        <h1>Will you go?</h1><h1>Will you still go?</h1>
+        
+        <span class="voteContext">Here's some other things to know...<br>
+            1. you'll have to wake up at 4:30 AM to travel to the show.</span>
+        <span class="voteContext">2: you'll miss your volunteer shift at the local food pantry... </span>
+        <span class="voteContext">3: and an art show featuring your best friend's paintings... </span>
+        <span class="voteContext">4: the championship game with your soccer team...</span>
+        <span class="voteContext">5: and your sister's birthday party...</span>
+        <div class="voteButtonBox">
+            <button class="voteChoice">Go</button>
+            <button class="voteChoice">Stay</button>
+        </div>
+        </div>
+    
+    
+        <div class="voteResultContainer">
+            <span class="liveFromNewYork"><span class="blinking">•</span> LIVE</span>
+                <canvas class="resultsChart"></canvas>
+
+            <span class="reflectionResult trickle"><h1>Discuss:</h1>
+                <br><br>If you decided to stay, what was the tipping point for your decision? 
+                <br><br>Which of these things "costs" the most to miss?
+                <br><br>If you still wanted to go to the concert: is there <i>anything</i> that would make you miss it? What?
+            </span>
+        </div>
+        <div class="timer"> 5:00 </div>
+    </div>
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="trickle-vote.js"></script>
+</body>
+
+</html>

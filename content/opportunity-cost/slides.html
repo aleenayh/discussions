@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Context Pages</title>
+</head>
+
+<body>
+  <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span
+      class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+
+  <div class="container" id="slideBaseContainer">
+    <div class="imagePosition"><video autoplay loop muted playsinline>
+      <source src="" type="video/mp4">
+    </video></div>
+    <div class="textContainer" id="textOne"></div>
+    <div class="textContainer" id="textTwo"></div>
+    <div class="textContainer" id="textThree"></div>
+    
+    <div id="progressContainer">
+      <div id="progressBar"> </div>
+    </div>
+  </div>
+
+
+  <div class="slidesets">
+    <video autoplay loop muted playsinline class="slideImg">
+      <source src="" type="video/mp4">
+    </video>
+    <p>(Would someone please read the slides?)</p>
+
+    <p>Welcome to this week's <b>student-led discussion</b>.</p>
+
+      <p>Let's begin.</p>
+      <video autoplay loop muted playsinline class="slideImg">
+        <source src="" type="video/mp4">
+      </video>
+
+      <p>Synthesis is a place to practice.</p>
+
+      <p>But practice what?</p>
+      
+      <p>The answer: <b>Practice teamwork.</b></p>
+      <video autoplay loop muted playsinline class="slideImg">
+        <source src="" type="video/mp4">
+      </video>
+      
+      <p>But practice <i>how?</i></p>
+      
+      <p> </p>
+      
+      <video autoplay loop muted playsinline class="slideImg">
+        <source src="/images/comms.mp4" type="video/mp4">
+      </video>
+      <p>Here's one way:</p>
+      
+      <p>We know that <b>good teams encourage ideas.</b></p>
+      
+      <p>So that's the practice for today.</p>
+      <video autoplay loop muted playsinline class="slideImg">
+        <source src="/images/comms.mp4" type="video/mp4">
+      </video>
+      
+      <p>At the end of today's session, we'll ask:</p>
+      
+      <p><b>“Did your team encourage ideas today?”</b></p>
+      
+      <p>Let's see how it goes.
+
+      <button id="replayButton"></button>    </p>
+  </div>
+
+
+
+
+  <div class="timer"> 5:00 </div>
+  <div class="elementCounter">1 of X</div>
+  <script src="script.js"></script>
+  <script src="slide-helper.js"></script>
+</body>
+
+</html>

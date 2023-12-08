@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gamestyle.css">
+  <title>dilemma</title>
+</head>
+
+<body>
+  <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+      <div id="gameContainer">
+        <div id="contextBox">
+        <img class="contextImg" src="/images/game1.png"> <!--the water one-->
+        <img class="contextImg" src="/images/game2.png"><!--the lamp one-->
+        <img class="contextImg" src="/images/game3.png"> <!--the picture one-->
+        <img class="contextImg" src="/images/game4.png"> <!--the cake one-->
+        <img class="contextImg" src="/images/game5.png"> <!---the window one-->
+
+        <div class="context"><h>The Situation</h> While your parents were out today, you and your sibling Jordan went swimming 
+          and both tracked water all over the new hardwood floors. Your parents come home and want to know who's responsible. 
+          They're asking each of you separately. Should you tell them Jordan did it? Or say nothing? Why?</div>
+        <div class="context"><h>The Situation</h> This afternoon a lamp was broken. You were in your room when it happened and 
+          you have no idea who's responsible. It could have been Jordan, or it could have been a pet. Your parents are asking 
+          each of you separately. You don't know what Jordan will say - there's a possibility you might be blamed. Should you 
+          blame Jordan, or stay quiet?</div>
+        <div class="context"><h>The Situation</h> You saw Jordan knock a picture off the wall and break the frame. Jordan hid 
+          it but you parents come home and see the empty spot on the wall and want to know what happened. You don't know what 
+          Jordan will tell them. Will you tell them Jordan did it, or say nothing?</div>
+        <div class="context"><h>The Situation</h> Your parents made a cake for one of their friends' birthdays and left it in 
+          the refrigerator. You didn't know what it was for and ate some, and now they can't take it with them. They seem really 
+          mad... should you blame it on Jordan, or say nothing?</div>
+        <div class="context"><h>The Situation</h> A friend of yours who lives across the street was playing outside and accidentally 
+          threw a ball through your window. You and Jordan both saw it happen. You know for sure that your friend won't admit it, and 
+          when your parents come home they are once again asking you and Jordan what happened. You <i>could</i> blame your friend... 
+          but if Jordan blames <i>you,</i> your parents probably won't believe you. What should you do?</div>
+      </div>
+        
+        <div id="buttonBox"><button id="betrayButton">Tell them Jordan did it.</button><button id="cooperateButton">Say nothing.</button>  </div>
+        <div id="scoreBox"><div id="results">This is the first round of five.</div>
+      
+        Overall, Jordan has been grounded for <span id="opponentScore">0</span> weeks.
+        <br><br>Overall, you have been grounded for <span id="yourScore">0</span> weeks.
+      
+     <hr>
+        </div>
+        <span id="resultsTimerTop">You are currently <b>viewing results.</b> Progressing to next decision point in...</span><span id="choiceTimerTop">You are currently <b>deciding.</b> Progressing to results in...</span><b><span id="gameTimer">0:00</span></b>
+        <div class="timer hidden">5:00</div>
+      </div>
+          
+      
+      
+      <div id="allianceWindow">Before anything else happens, Jordan approaches you and asks if you can agree that the next time one of you is in trouble, you'll both stay quiet. Hopefully this means you'll both be punished less. Can you promise that?<br><br>
+        <div class="allianceButtonBox"><button id="confirmAlliance">Promise you'll stay quiet.</button><button id="denyAlliance">Don't make any promises.</button></div>
+        
+<br><br>        (This offer is for <B>you</B> - the rest of your room may not see it!)  </div>
+
+  </div>
+  <script src="script.js"></script>
+  <script src="interactive.js"></script>
+</body>
+
+</html>

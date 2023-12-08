@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span
+            class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+    </div>
+
+
+    <div class="container voteBox">
+        <div class="voteHeaderBar">
+            <div class="voteHeader">You are finishing a painting for an art contest.<BR>
+
+                The judges are coming. You have time for one thing...</div>
+            <div id="dummyTimer">0:60</div>
+            <div id="scenarioEndTime">22000</div><div id="scenarioFullTime">60000</div>
+        </div>
+
+
+
+        <div class="voteQuestionContainer">
+            <h>ADD GLITTER or NOT?</h> <br>
+            <video class="rapidVoteImg" autoplay loop muted playsinline>
+                <source src="images/market.mp4" type="video/mp4">
+            </video>
+            <span class="voteContext">The other entries all look the same: boring and plain.</span>
+            <span class="voteContext">Your painting is of a starry sky with twinkling stars.</span>
+            <span class="voteContext">The theme of the contest is “Keeping it Simple: Art and Nature.” </span>
+            <span class="voteContext">No previous winners ever used glitter.</span>
+            <div class="voteButtonBox">
+                <button class="voteChoice">ADD GLITTER</button>
+                <button class="voteChoice">NO GLITTER</button>
+            </div>
+        </div>
+
+
+        <div class="voteResultContainer">
+            <span class="liveFromNewYork"><span class="blinking">•</span> LIVE</span>
+            <canvas class="resultsChart"></canvas>
+
+            <div id="paralysis">You awkwardly dumped glitter on half the picture. The judges weren't impressed.
+                We call this <b>analysis paralysis</b>
+                &ndash; being too focused analysing all the details to react
+                when you should.
+            </div>
+
+            <span class="reflectionResult">
+                <h>Discuss:</h><br>
+                Did you have enough information to make a decision?<br> Why or why not?<br><br>
+
+                Which piece of information was <b>most valuable?</b> Why?<br><br>
+
+                Which piece of information was <b>least valuable?</b> Why?
+            </span>
+        </div>
+        <div class="timer"> 5:00 </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="votecode.js"></script>
+</body>
+
+</html>

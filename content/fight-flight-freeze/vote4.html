@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+    </div>
+
+
+    <div class="container voteBox">
+        <div class="voteHeaderBar">
+<div class="voteHeader">You're hiking deep in the woods,<br>
+    and you hear a loud rustling nearby.</div>
+    <div id="dummyTimer">1:30</div><div id="scenarioEndTime">6000</div><div id="scenarioFullTime">90000</div></div>
+
+
+
+       <div class="voteQuestionContainer">        <h>RUN AWAY or MAKE NOISE?</h> <br>
+        <video class="rapidVoteImg" autoplay loop muted playsinline>
+            <source src="images/forest.mp4" type="video/mp4">
+          </video>
+        <span class="voteContext">Whatever is making the sounds is big. And moving toward you.</span>
+        <span class="voteContext">The rustling stops. </span>
+            <span class="voteContext">You notice a sign nearby that says, “Beware of Wildlife.” </span>
+            <span class="voteContext">All the birds nearby suddenly fly away.</span>
+            <span class="voteContext">You hear a voice calling for help in the same direction as the rustling sounds.</span>
+        <div class="voteButtonBox">
+            <button class="voteChoice">RUN AWAY</button>
+            <button class="voteChoice">MAKE NOISE</button>
+        </div>
+        </div>
+    
+    
+        <div class="voteResultContainer">
+            <span class="liveFromNewYork"><span class="blinking">•</span> LIVE</span>
+                <canvas class="resultsChart"></canvas>
+
+                <div id="paralysis">You did nothing. (Also, don't take survival advice from Synthesis)
+                </div>
+
+            <span class="reflectionResult"><h>So...</h>
+                <br><br>Is this a scenario that requires careful thought<br>
+                 or quick reactions? Why?<br><br>
+
+                If this actually happened to you in real life,<br>
+                 what do you think you would do?
+            </span>
+        </div>
+        <div class="timer"> 5:00 </div>
+    </div>
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="votecode.js"></script>
+</body>
+
+</html>

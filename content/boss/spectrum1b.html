@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"> <span
+            class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <div class="container spectrumVote">
+        <div class="voteQuestionContainer">
+            <h1>Drag options to rank.</h1>
+            <div class="instructionText"></div>
+        </div>
+
+        <div id="spectrum">
+            <div class="voteChoice firstDrag" style="background-image:url('/images/colorwheel.jpg')" title="Quality Assurance Manager"></div>
+            <div class="voteChoice secondDrag" style="background-image:url('/images/paintbrush.jpg')" title="Head Painter"></div>
+            <div class="voteChoice thirdDrag" style="background-image:url('/images/trials.jpg')" title="Project Scheduler"></div>
+            <div class="voteChoice fourthDrag" style="background-image:url('/images/paint.jpg')" title="Painter Apprentice"></div>
+            <div class="voteChoice fifthDrag" style="background-image:url('/images/magazines.jpg')" title="Sales Developer"></div>
+        </div>
+        <div id="reflectionQuestion">You made some tradeoffs. Do these results seem like they will lead to success?</div>
+        <div class="spectrumDesign">
+            <div class="arrow-left"></div>
+            <div class="gradientBar"></div>
+            <div class="arrow-right"></div>
+        </div>
+        <div class="leftLabel">Least  </div>
+        <div class="rightLabel">Most  </div>
+        <div id="contextBlock">
+        </div>
+
+        <div id="spectrumResultsReturnHere">
+            <div class="instructionText">On average, other students said...</div>
+            <div class="voteChoice firstDrag" style="background-image:url('/images/colorwheel.jpg')" title="Quality Assurance Manager"></div>
+            <div class="voteChoice secondDrag" style="background-image:url('/images/paintbrush.jpg')" title="Head Painter"></div>
+            <div class="voteChoice thirdDrag" style="background-image:url('/images/trials.jpg')" title="Project Scheduler"></div>
+            <div class="voteChoice fourthDrag" style="background-image:url('/images/paint.jpg')" title="Painter Apprentice"></div>
+            <div class="voteChoice fifthDrag" style="background-image:url('/images/magazines.jpg')" title="Sales Developer"></div>
+        </div>
+    </div>
+
+
+
+    <div class="timer"> 5:00 </div>
+    <div id="fakeTimer">0:00</div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="dragvote.js"></script>
+</body>
+
+</html>

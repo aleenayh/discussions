@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"> <span
+            class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <!---------one----------->
+    <div class="container starVote">
+        <div class="voteQuestionContainer"><p>Good discussions have different ideas, from different voices.</p>
+            <h1>Did you team encourage different voices?</h1>
+
+
+            <div class="starsContainer delay">
+                <span class="star" id="1">&#9733;</span>
+                <span class="star" id="2">&#9733;</span>
+                <span class="star" id="3">&#9733;</span>
+                <span class="star" id="4">&#9733;</span>
+                <span class="star" id="5">&#9733;</span>
+            </div>
+            <div class="starExplainers">
+                <span class="explainer">Very little encouragement</span>
+                <span class="explainer"> </span>
+                <span class="explainer">Some encouragement</span>
+                <span class="explainer"> </span>
+                <span class="explainer">We did this often</span>
+            </div>
+            <div id="reflectionResult">
+                <h1>This topic is complicated. Do you think your room got to the bottom of it?</h1>
+            </div>
+        </div>
+
+        <div class="voteResultContainer">
+            <div class="chartBox">
+                <canvas class="resultsChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="timer"> 5:00 </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="starvote.js"></script>
+</body>
+
+</html>

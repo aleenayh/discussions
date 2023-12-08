@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"> <span
+            class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <div class="container spectrumVote">
+        <div class="voteQuestionContainer">
+            <h1>Rank your hiring recommendations.</h1>
+            <div class="instructionText">The top three will be hired. Two will not.</div>
+        </div>
+
+        <div id="spectrum">
+            <div class="voteChoice firstDrag" style="background-image:url('/images/lab.jpg')" title="Research Scientist"></div>
+            <div class="voteChoice secondDrag" style="background-image:url('/images/schedule.jpg')" title="Clinical Trial Manager"></div>
+            <div class="voteChoice thirdDrag" style="background-image:url('/images/research.jpg')" title="Regulation Specialist"></div>
+            <div class="voteChoice fourthDrag" style="background-image:url('/images/data.jpg')" title="Sales Representative"></div>
+            <div class="voteChoice fifthDrag" style="background-image:url('/images/pharma.jpg')" title="Quality Control"></div>
+        </div> 
+        <div id="reflectionQuestion">
+            <div class="cyoaResult">You didn't hire the Research Scientist. If research the least important, how will the company develop new medications to stay ahead in the industry? Are you making a mistake here?</div>
+            <div class="cyoaResult">You didn't hire the Clinical Trial Manager. Without this position, how will the company make sure the drugs are actually safe? Are you making a mistake here?</div>
+            <div class="cyoaResult">You didn't hire the Regulation Specialist. If you don’t pass regulations, you don’t get to sell the medicine. Are you making a mistake here?</div>
+            <div class="cyoaResult">You didn't hire the Sales Representative. Making medicines is extremely expensive. Without sales, how will the company survive? Are you making a mistake here?</div>
+            <div class="cyoaResult">You didn't hire the Quality Control Officer. If you have a medicine with no quality controls, do you risk lawsuits? Are you making a mistake by not including this role?</div>
+        </div>
+        <div class="spectrumDesign">
+            <div class="arrow-left"></div>
+            <div class="gradientBar"></div>
+            <div class="arrow-right"></div>
+        </div>
+        <div class="leftLabel">Least Important</div>
+        <div class="rightLabel">Most Important</div>
+        <div id="contextBlock">
+        </div>
+
+        <div id="spectrumResultsReturnHere">
+            <div class="instructionText">On average, other students said...</div>
+            <div class="voteChoice firstDrag" style="background-image:url('/images/lab.jpg')" title="Research Scientist"></div>
+            <div class="voteChoice secondDrag" style="background-image:url('/images/schedule.jpg')" title="Clinical Trial Manager"></div>
+            <div class="voteChoice thirdDrag" style="background-image:url('/images/research.jpg')" title="Regulation Specialist"></div>
+            <div class="voteChoice fourthDrag" style="background-image:url('/images/data.jpg')" title="Sales Representative"></div>
+            <div class="voteChoice fifthDrag" style="background-image:url('/images/pharma.jpg')" title="Quality Control"></div>
+        </div>
+    </div>
+
+
+
+    <div class="timer"> 5:00 </div>
+    <div id="fakeTimer">0:00</div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="dragvote.js"></script>
+</body>
+
+</html>

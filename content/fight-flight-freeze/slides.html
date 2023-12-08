@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Context Pages</title>
+</head>
+
+<body>
+  <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span
+      class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+
+  <div class="container" id="slideBaseContainer">
+    <div class="imagePosition"><video autoplay loop muted playsinline>
+      <source src="images/clock.mp4" type="video/mp4">
+    </video></div>
+    <div class="textContainer" id="textOne"></div>
+    <div class="textContainer" id="textTwo"></div>
+    <div class="textContainer" id="textThree"></div>
+    <div id="progressContainer">
+      <div id="progressBar"> </div>
+    </div>
+  </div>
+
+  <!----- don't adjust anything above this line------>
+
+  <div class="slidesets">
+    <!---- first set of "slides" (time-bundled content) ------->
+    <p>(Would someone mind reading the slides?)</p>
+
+    <p>Humans are interesting. Under stress, our system reacts with <b>flight, fight, or freeze.</b>
+
+    <p>We're going to explore that today. Here's how.</p>
+
+    <p>1. You will be put into a scenario with a timer.</p>
+
+    <p>2. You must make a decision before time runs out.</p>
+
+    <p><b>But there's a catch.</b></p>
+
+    <p>You <b>won't have all the information</b> you need.</p>
+
+    <p>And you don't know <b>when the scenario will end.</b> Maybe 15 seconds. Maybe 60.</p>
+
+    <p>You can only make <b>one decision</b>. Once you choose, your decision is final.</p>
+
+    <p>So, what do you think?</p>
+
+    <p>Is it better to decide quickly?</p>
+
+    <p>Or wait longer and risk the scenario ending randomly?
+
+      <button id="replayButton"></button>
+    </p>
+  </div>
+
+
+
+
+  <div class="timer"> 5:00 </div>
+  <div class="elementCounter">1 of X</div>
+  <script src="script.js"></script>
+  <script src="slidecode.js"></script>
+</body>
+
+</html>

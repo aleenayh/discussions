@@ -1,0 +1,140 @@
+#contextBox {
+  width:60vw;
+  height:35vh;
+  padding:1em;
+  margin:auto;
+  text-align:justify;
+  background-color: rgba(66, 66, 66, 0.6);
+  color:white;
+  border-radius:15px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size:1.2em;
+  line-height:100%;
+}
+#contextBox h {
+  font-size:1.2em;
+  font-weight:bold;
+  display:block;
+  font-variant:small-caps;
+  text-align:center;
+}
+.contextImg {
+  height: 33vh;
+  float:left;
+  margin-right:1em;
+  border-radius:15px;
+}
+.contextImg:not(:first-of-type) {
+  display: none;
+}
+.context {
+  vertical-align:center;
+}
+.context:not(:first-of-type) {
+  display: none;
+}
+#buttonBox {
+  width:60vw;
+  margin: 1em auto 0 auto;
+  text-align:center;
+  display:flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content:space-evenly;
+}
+button {
+  background-color:#9d9b9b;
+  color:black;
+  border-radius:10px;
+  width:20vw;
+  min-height:5vh;
+  font-size:1em;
+  padding:1em;
+  margin:0;
+  vertical-align:top;
+  font-family:inherit;
+}
+button:hover {
+  background-color:#d1d1d1;
+  color:black;
+  cursor:pointer;
+}
+button.clicked {
+  background-color: #fc5204;
+  color:#613b03;
+}
+button.clicked:hover{
+  color:black;
+}
+button :disabled {
+  background-color: inherit;
+  cursor: not-allowed;
+  opacity:0.5;
+}
+button.blocked {
+  background-color:rgba(77, 76, 76, 0.8);
+  color:rgb(114, 113, 113);
+  cursor:not-allowed;
+}
+button.blocked:hover {
+  background-color:rgba(77, 76, 76, 0.8);
+  color:rgb(114, 113, 113);
+  cursor:not-allowed;
+}
+#scoreBox {
+  width:80vw;
+  max-height:30vh;
+  padding:1em;
+  padding-top:none;
+  margin:auto;
+  text-align:justify;
+  font-size:1.2em;
+  line-height:100%;
+}
+@media screen and (max-height: 900px) {
+  #scoreBox {
+      font-size: 1em;
+      height: 25vh;
+  }
+  #contextBox {
+    height:30vh;
+    font-size:1em;
+  }
+}
+#gameTimer {
+  display:inline;
+  font-family:inherit;
+  font-size: inherit;
+  bottom:0.7em;
+  height:fit-content;
+}
+#resultsTimerTop  {
+  display:none;
+}
+#results {
+  min-height:100px;
+}
+
+#allianceWindow {
+  display:none;
+  position:absolute;
+  top:25vh;
+  left:25vw;
+  height:auto;
+  width:55vw;
+  padding:2.5em;
+  background-color:rgba(66, 66, 66, 1);
+  border-radius:25px;
+}
+.allianceButtonBox {
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  align-items:stretch;
+  justify-content:space-evenly;
+}
+.allianceButtonBox button {
+  width:10em;
+}

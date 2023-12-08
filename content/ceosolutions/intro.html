@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Intro</title>
+  </head>
+
+  <body>
+    <div class="header" id="standardHeader">
+      <img class="logo" src="images/logo.png" /><span class="headerGradient"
+        >Teams</span
+      >
+      ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <div class="container" id="slideBaseContainer">
+      <div id="imagePosition">
+        <div class="slideImg displayed"></div>
+        <div class="slideImg"></div>
+        <video
+          class="slideImg"
+          autoplay
+          loop
+          muted
+          src="/images/introa.mp4"
+        ></video>
+        <video
+          class="slideImg"
+          autoplay
+          loop
+          muted
+          src="/images/introb.mp4"
+        ></video>
+      </div>
+      <div class="textContainerWrapper"></div>
+
+      <div id="progressContainer">
+        <div id="progressBar"></div>
+      </div>
+    </div>
+
+    <div class="slidesets">
+      <p>(Would someone please read the slides?)</p>
+      <p>Welcome to this week's student-led discussion.</p>
+      <p>Let's begin.</p>
+
+      <p>A good discussion has questions and answers.</p>
+      <p>In these sessions, we provide a lot of the questions.</p>
+      <p>And you provide a lot of the answers.</p>
+
+      <p>
+        Today, keep track of what <b>other</b> questions you come up with.
+      </p>
+      <p>
+        Go beyond just giving <b>insightful answers.</b> Instead, try to ask
+        <b>insightful questions.</b>
+      </p>
+      <p>At the end of the session, we'll ask you how it went. What's the difference between a question and an <i>insightful</i> question?</p>
+    </div>
+
+    <div class="timer">5:00</div>
+    <div class="elementCounter">1 of X</div>
+    <script src="script.js"></script>
+    <script src="focaltext.js"></script>
+  </body>
+</html>

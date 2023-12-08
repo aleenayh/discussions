@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"> <span
+            class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <div class="container spectrumVote">
+        <div class="voteQuestionContainer">
+            <h1>Rank your hiring recommendations.</h1>
+            <div class="instructionText">The top three will be hired. Two will not.</div>
+        </div>
+
+        <div id="spectrum">
+            <div class="voteChoice firstDrag" style="background-image:url('/images/editor.jpg')" title="Editor"></div>
+            <div class="voteChoice secondDrag" style="background-image:url('/images/investigate.jpg')" title="Investigative Reporter"></div>
+            <div class="voteChoice thirdDrag" style="background-image:url('/images/camera.jpg')" title="Photojournalist"></div>
+            <div class="voteChoice fourthDrag" style="background-image:url('/images/digital.jpg')" title="Digital Editor"></div>
+            <div class="voteChoice fifthDrag" style="background-image:url('/images/fact.jpg')" title="Fact Checker"></div>
+        </div> 
+        <div id="reflectionQuestion">
+            <div class="cyoaResult">You didn't hire the Editor. Without an editor, the team has no leader. Who's in charge, then?</div>
+            <div class="cyoaResult">You didn't hire the Investigative Reporter. Without investigative journalism, you won't have any original news stories. How will this affect your reputation as a news leader?</div>
+            <div class="cyoaResult">You didn't hire the Photojournalist. Your news stories will <i>only</i> have words? How will this affect your reputation as a go-to news organization? Pictures are powerful. </div>
+            <div class="cyoaResult">You didn't hire the Digital Editor. News changes quickly, and online platforms can keep up. If you don't have this role, how will this affect your reputation as an up-to-date news team?</div>
+            <div class="cyoaResult">You didn't hire the Fact Checker. Without this role, how will the newspaper guarantee its reputation to deliver <b>truthful information<b> to the public?</div>
+        </div>
+        <div class="spectrumDesign">
+            <div class="arrow-left"></div>
+            <div class="gradientBar"></div>
+            <div class="arrow-right"></div>
+        </div>
+        <div class="leftLabel">Least Important</div>
+        <div class="rightLabel">Most Important</div>
+        <div id="contextBlock">
+        </div>
+
+        <div id="spectrumResultsReturnHere">
+            <div class="instructionText">On average, other students said...</div>
+            <div class="voteChoice firstDrag" style="background-image:url('/images/editor.jpg')" title="Editor"></div>
+            <div class="voteChoice secondDrag" style="background-image:url('/images/investigate.jpg')" title="Investigative Reporter"></div>
+            <div class="voteChoice thirdDrag" style="background-image:url('/images/camera.jpg')" title="Photojournalist"></div>
+            <div class="voteChoice fourthDrag" style="background-image:url('/images/digital.jpg')" title="Digital Editor"></div>
+            <div class="voteChoice fifthDrag" style="background-image:url('/images/fact.jpg')" title="Fact Checker"></div>
+        </div>
+    </div>
+
+
+
+    <div class="timer"> 5:00 </div>
+    <div id="fakeTimer">0:00</div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="dragvote.js"></script>
+</body>
+
+</html>

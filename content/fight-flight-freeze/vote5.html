@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+    </div>
+
+
+    <div class="container voteBox">
+        <div class="voteHeaderBar">
+<div class="voteHeader">You walk by two students arguing outside.<br>
+It's getting bad.</div>
+    <div id="dummyTimer">1:30</div><div id="scenarioEndTime">30000</div><div id="scenarioFullTime">90000</div></div>
+
+
+
+       <div class="voteQuestionContainer"><h>INTERVENE or NOT?</h> <br>
+        <video class="rapidVoteImg" autoplay loop muted playsinline>
+            <source src="images/TBD.mp4" type="video/mp4">
+          </video>
+        <span class="voteContext">One student is older and bigger than the other.</span>
+        <span class="voteContext">An adult is nearby. </span>
+        <span class="voteContext">The adult on their phone, not watching.</span>
+        <span class="voteContext">The smaller student looks scared.</span>
+            <span class="voteContext">They are siblings. </span>
+            
+            
+        <div class="voteButtonBox">
+            <button class="voteChoice">INTERVENE</button>
+            <button class="voteChoice">DON'T INTERVENE</button>
+        </div>
+        </div>
+    
+    
+        <div class="voteResultContainer">
+            <span class="liveFromNewYork"><span class="blinking">•</span> LIVE</span>
+                <canvas class="resultsChart"></canvas>
+
+                <div id="paralysis">You failed to make a decision 
+                    before the scenario ended. We call this <b>analysis paralysis</b>
+                    &ndash; being too focused analysing all the details to react 
+                    when you should. Next time try to think faster!
+                </div>
+
+            <span class="reflectionResult"><h>Discuss:</h>
+                <br><br>In your family, are conversations<BR> more <B>rational</B> or more <B>reactive</B>?<BR><BR>
+
+                    In general, should social relationships <BR>be based on slow thinking or quicker reactions?
+            </span>
+        </div>
+        <div class="timer"> 5:00 </div>
+    </div>
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="votecode.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Voting</title>
+  </head>
+
+  <body>
+    <div class="header" id="standardHeader">
+      <img class="logo" src="images/logo.png" />
+      <span class="headerGradient">Teams</span> ◈
+      <span id="episodeTitle"></span>
+    </div>
+
+    <!---------one----------->
+    <div class="container endorsement">
+      <div class="instructSide tiny">
+        <p>Today we're changing it up.</p>
+        <p>Today's focus was to avoid jumping to conclusions, and instead <b>consider all options fairly.</b></p>
+
+        <P>Instead of asking how your <b>team</b> did this week, we're asking:</P>
+        <p>In your room, <b>who stood out for doing this the best?</b></p>
+        <p>Who considered all options, even when the scenarios were complicated?</p>
+        <p>Discuss.</p>
+      </div>
+
+      
+      <div class="submitSide">
+        
+
+        <h>Ready to give a shout-out?</h>
+        <p>Let us know who did the best job of this, and <b>one awesome example.</b></p>
+        <textarea id="endorsementField" placeholder="Click here and type your answer."></textarea>
+        <div class="spinningWheel"></div>
+        <button id="submitEndorsement">Submit</button>
+      </div>
+    </div>
+    <img id="textBoxCoverImg" src="/images/scales.jpg">
+
+    <div class="timer">5:00</div>
+
+    <script src="script.js"></script>
+    <script src="endorse.js"></script>
+  </body>
+</html>

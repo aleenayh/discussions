@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting</title>
+</head>
+
+<body>
+    <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"> <span
+            class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span>
+    </div>
+
+    <div class="container voteBox">
+        <div class="voteQuestionContainer">
+            Today was about <b>encouraging the ideas</b> of your teammates.<br><br>
+
+            <h>How well did your group do that?</h> <br><br>
+            Did you encourage each other often, only sometimes, or not much?<br><Br>
+             
+         <div class="voteButtonBox">
+            <button class="voteChoice">Often</button>
+             <button class="voteChoice">Sometimes</button>
+             <button class="voteChoice">Not much</button>
+         </div>
+         <span class="reflectionResult"><h>Discuss with your room:</h>
+             <br> What's the best way to encourage ideas from others?
+         </span></div>
+     
+     
+         <div class="voteResultContainer">
+             <b>See what other Synthesis students thought:</b>
+             <div class="chartBox"><span class="liveFromNewYork"><span class="blinking">•</span> LIVE</span>
+                 <canvas class="resultsChart"></canvas>
+  
+             </div>
+         </div>
+     
+     </div>
+
+
+
+
+
+    <div class="timer"> 5:00 </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    <script src="votecode.js"></script>
+</body>
+
+</html>

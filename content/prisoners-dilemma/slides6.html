@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Context Pages</title>
+</head>
+
+<body>
+  <div class="header" id="standardHeader"><img class="logo" src="images/logo.png"><span class="headerGradient">Teams</span> ◈ <span id="episodeTitle"></span></div>
+
+  <div class="container" id="slideBaseContainer">
+    <div class="imagePosition"><video autoplay loop muted playsinline>
+        <source src="images/img31.mp4" type="video/mp4">
+      </video></div>
+    <div class="textContainer" id="textOne"></div>
+    <div class="textContainer" id="textTwo"></div>
+    <div class="textContainer" id="textThree"></div>
+    <div id="progressContainer">
+      <div id="progressBar"> </div>
+    </div>
+  </div>
+
+  <!----- don't adjust anything above this line except the episode title------>
+
+  <div class="slidesets">
+    <!------------------------------------fourth slide set------------------------>
+    <p>The scenarios are specific…<br>
+      …but the overall question is bigger.</p>
+    <p>In general, which do you think is the better way to approach life?</p>
+    <p>1. Cooperate with others (and risk losing personal benefit)?<br><br>
+      2. Work individually (and risk losing the benefits of cooperation)?</p>
+
+    <p>Which option is <b>riskier</b>?</p>
+    <p>Which option is <b>easier</b>?</p>
+    <p>Which option is <b>most effective</b>?<br><br>Discuss.<button id="replayButton"></button></p>
+  </div>
+
+
+
+
+  <div class="timer"> 5:00 </div><div class="elementCounter">1 of X</div>
+  <script src="script.js"></script>
+  <script src="slidecode.js"></script>
+</body>
+
+</html>
